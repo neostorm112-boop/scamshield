@@ -1,0 +1,5 @@
+# Shared hosting / CDN / parking: never drawn as a link (graph.py). Edge strength levels live in scoring.yaml edge.
+asns: [13335, 16509, 15169, 8075, 14618, 54113, 20940]   # Cloudflare, Amazon x2, Google, Microsoft, Fastly, Akamai
+ns_suffixes: [.cloudflare.com, .awsdns-, .googledomains.com, .azure-dns.com, .sedoparking.com, .parkingcrew.net, .bodis.com]   # CDN/big-DNS name servers and parking
+host_suffixes: [pages.dev, workers.dev, onrender.com, vercel.app, netlify.app, appspot.com, web.app, firebaseapp.com, github.io, herokuapp.com]   # platform subdomains: no link of any kind
+cidrs: [127.0.0.0/8, 0.0.0.0/8]   # sinkholes

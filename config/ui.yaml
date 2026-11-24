@@ -1,0 +1,14 @@
+# Queue order: inside a tier highest risk first; ties by urgency = risk x freshness; [hours since first seen, weight], older gets freshness_older.
+freshness_steps: [[6, 1.0], [24, 0.8], [72, 0.6]]
+freshness_older: 0.4
+# Rows one queue view shows at first; "Show N more" adds this many again (the live list has ~1500 low-signal rows).
+queue_page_rows: 50
+# Upper bound for ?rows=N (the 5 s poll repeats the request).
+queue_page_rows_max: 500
+
+# Case timeline: "Found by ScamShield" gets a gap note when it is this close after the certificate (hours) or the registration (days).
+timeline_gap_cert_hours: 48
+timeline_gap_registration_days: 30
+
+# Every age on a card (registered / first certificate / found after registration) uses one wording: whole hours below this, whole days from it
+age_hours_max: 48

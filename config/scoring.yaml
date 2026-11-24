@@ -1,0 +1,63 @@
+rule_version: v2-points
+# Evidence points, not averages (see docs/ARCHITECTURE.md); starting priors, a human copies measured weights in
+points:
+  brand: {registrable_token: 3, subdomain_label: 2, platform_label: 2, homoglyph_bonus: 2, edit_factor: 0.5,
+          context_each: 1, context_max: 2, short_keyword_prior: -1.5, restricted_own_label: -3, foreign_brand: -1.5, gov_ae_factor: 0.2, smishing_pattern: 1,
+          dev_subdomain: -2}   # brand only in a subdomain next to a dev/staging word (beta-etisalat.ipixsolutions.net, preprod-eandmoney-apim.azure-api.net): a vendor's test copy, lowered, not dropped
+  risk:  {feed: {openphish: 3, phishing_database: 2, phishing_army: 2}, age_le_30: 2, age_le_180: 1, age_gt_730: -1.5,
+          cert_le_7d: 1, edge_confirmed: 3, edge_in_feed: 1.5, resolves: 0.5, restricted_host: 1,
+          age_recent_days: 30, age_young_days: 180, age_old_days: 730, cert_recent_days: 7}   # day limits of the age_le_30 / age_le_180 / age_gt_730 / cert_le_7d points
+bands: {brand_min: 1.5, brand_strong: 3, t_further: 7, r_strong: 5, r_gray: 2, t_low: 3, p_scale: 12}
+beta:  {dns: 2, asn: 1, age: 1, certs: 1, feed: 2}     # coverage: status ok OR missing = done; error = not done
+foreign_brands: [meta, facebook, paypal, apple, microsoft, netflix, dhl, amazon]
+# Microsoft Defender for Cloud Apps session proxy: <real domain>.<suffix> is that real domain seen through the proxy, not a lookalike
+microsoft_proxy_suffixes: [mcas.ms, admin-mcas.ms, mcas-df.ms, admin-mcas-df.ms]
+restricted_foreign_zones: [ac, edu, gov, mil]   # first label of a foreign (not .ae) suffix such as ac.bd: a keyword there is a university/government name, never a feed-mode hit
+restricted_foreign_suffixes: [org.au]   # whole foreign suffixes treated the same way: org.au is vetted non-profits (library.smsa.org.au); open org.xx such as org.uk stays a normal zone (salik.org.uk must still match)
+# Brand matching: <=5 chars whole-token only; 6-8 Levenshtein 1; >=9 Levenshtein 2
+lookalike: {short_keyword_max_len: 5, edit1_max_len: 8, edit_score: 0.8, context_keyword_max_len: 3,
+            typo_min_keyword_len: 9, typo_prefix_len: 7, typo_edit_ratio: 0.3,   # keyword >= 9 chars: same first 7 chars, length within 2, edit distance <= floor(0.3 * keyword length) is a typo-squat
+            context_required_keywords: [parkin, sewa, taqa, dewa, darb],
+            dev_labels: [beta, staging, stage, stg, dev, test, uat, qa, demo, sandbox, preprod],   # dev/staging words in the subdomain part of a brand hit (dev_subdomain points)
+            embedded_word_exceptions: {careem: [email, employ, emergency], aramex: [mexico]},   # per keyword (lumin+aramex+ico = luminaramexico.com): an ordinary word that crosses that keyword's substring hit cancels it: care+email, care+employer, care+emergency are no "careem"; per keyword so dubaipolice+mail still matches
+            homoglyph_word_exceptions: [career]}   # real words whose "rn" must not fold to "m" (career -> careem false hits);   # sewa = Indonesian/Malay "rent", taqa = Arabic "energy", dewa = Indonesian "god" (all 60 past dewa candidates were casinos/SEO, Google CT flood on pages.dev; glued paydewa/dewabill no longer match); adib stays plain (golden fake adib-kyc.com); darb = Arabic "road/way" (all 14 queued darb names were Arabic sites — darb.care clinic, darb-academy, hezb-darb, d4rb.com, darb-smartfollowup.com date factory); its context also counts a misspelling of the brand's other official label (darb-qmobilitya.com) (sewa-mobil-solo.com, s3wa.top casino); plain brand words that match only as a whole token next to a UAE word (lookalike_uae_context) or a payment word (lookalike_context); parking is a common word
+# UAE smishing pattern (no brand needed): a UAE place/government word as a token + a cheap TLD + a short random-looking registrable name.
+# random-looking = has a digit, or 3+ consonants / 3+ vowels in a row (y counts as a vowel; letter-only names need letters_min_len chars, shorter ones are mostly acronyms), and the name is not in common_words. Names without a UAE word are never queued from CT alone.
+smishing: {tlds: [top, icu, xin, site, vip, cc, buzz, mom, click, cyou, sbs, shop],
+           words: [dubai, abudhabi, uae, ae, sharjah, rta, police, fine, toll, parcel],
+           root_min_len: 4, root_max_len: 6, run_max: 2, letters_min_len: 5,
+           common_words: [sports, sport, events, event, films, film, trends, trend, queue, beauty, strat, shop, store, trade, trades, travel, tours, tour,
+                          deals, deal, news, media, music, games, game, foods, food, fresh, style, stays, stay, homes, home, cars, auto, motors, tech, cloud,
+                          study, works, work, ideas, great, smart, money, stores, rental, rentals, hotel, hotels, party, shows, flows, books, brands, brand]}   # real English words that pass the run rule (sports, beauty, queue)
+# Phishing without a brand (no brand needed): CT names with a lure word on a cheap TLD (smishing.tlds) go to a separate small hourly budget; a young non-official domain whose page asks for card / code / password or sends data to Telegram is queued (GRAY) even with no brand
+# max_age_days: "young" = registered (else first certificate) within this many days; skip_labels: service subdomains (autodiscover.x.top) are never a phishing page; hosting_platforms and shared_infra.host_suffixes are skipped too
+generic: {max_age_days: 30, budget_per_hour: 60, nrd_budget_per_hour: 60,   # nrd: own pool, its daily file must not eat the CT hour
+          # a strong lure word is enough on a cheap TLD; a weak one counts only with a second sign: another lure word, or a hyphen / digit in the registrable label
+          lure_strong: [verify, kyc, otp, refund, parcel, delivery, claim, prize, wallet, login, signin, unlock, suspend, confirm, invoice, reward],
+          lure_weak: [pay, payment, bank, account, secure, support, update, fine, bonus],
+          # service subdomains (autodiscover.x.top): the name is dropped; apex_labels (www.x.top): the name is reduced to its registrable domain and the label is ignored
+          skip_labels: [autodiscover, cpanel, mail, webmail, webdisk, whm, cpcalendars, cpcontacts, ftp, smtp, imap, pop, pop3, ns1, ns2, mx, autoconfig],
+          apex_labels: [www, m, api, admin, cdn, static, img, assets, app]}
+# Keywords <=context_keyword_max_len (du, rta, icp) need one of these words as a token in the same name; a token in a platform's project slot (label left of the suffix) never counts
+# Global brands (HSBC/Citi phishing is worldwide) match only with one of these UAE tokens in the same name, or the .ae TLD
+lookalike_global_brands: [hsbcae, citiae]
+lookalike_uae_context: [ae, uae, dubai, abudhabi, emirates, sharjah, ajman, dxb, auh]
+lookalike_context: [pay, bill, bills, recharge, telecom, mobile, sim, uae, ae, login, verify, offer, gift, points, fine, fines, toll]
+regional_denied_tlds: [tk, ml, ga, cf, gq]   # free/cheap country TLDs: never "the brand's own regional site"; generic TLDs (top, xyz, online) fail the 2-letter check anyway
+hosting_platforms: [appspot.com, r.appspot.com, pages.dev, vercel.app, netlify.app, web.app, firebaseapp.com, github.io, herokuapp.com, workers.dev]   # ewp.live is deliberately absent
+guards: {edge_min_strength: 0.5, g1_min_keyword_len: 4, g3_min_name_len: 4}   # G2 and R4 edge strength; G1 homoglyph keyword length; G3 brand-name token length
+thresholds: {min_coverage: 0.4}
+# Link strength levels (practitioner rules): strong = rare NS, same hostname pattern; medium = shared IP on a non-shared host, same registrar + day;
+# weak (< min_strength) is never stored or drawn. popular_max: a name server / IP / pattern shared by more domains in our DB than this drops one level.
+# popular_max_kit: the same for a shared script / panel found by "find relatives" (one gang reuses its kit on tens of domains: one live check saw 46)
+edge: {strength: {strong: 0.8, medium: 0.5, weak: 0.2}, min_strength: 0.35, popular_max: 20, popular_max_kit: 50, max_nodes: 50, hops: 2, pattern_min_literal: 4}
+# Page snapshot: brand shown on a non-official domain (B points, the larger of name / logo) and a form asking for card, one-time code, Emirates ID or password (R points)
+snapshot: {page_brand_name: 2, page_brand_logo: 3, asks_card_otp: 3, asks_password: 1.5, logo_max_distance: 8, page_max_distance: 6, name_min_len: 4,   # distances: differing bits of the 64-bit dHash
+           ambiguous_names: [sewa, darb, taqa, adib, tamm, payit, eand, amer, mofa], ambiguous_window: 60,   # ordinary words in other languages / names: count on a page only with a UAE word within ambiguous_window characters
+           parked_peers_min: 3, parked_peers_reassess_max: 10,   # per parked snapshot (100+ peers x graph load held the DB 156 s)   # not yet snapshotted, but its IP (not shared hosting) already carries this many parked domains -> GRAY_LOW (104 .ph names on one parking IP)
+           exfil_channel: 4, hotlink_official: 2,   # R points: the page contacts a channel kits send stolen data to; B points: the page loads files from a brand's official site
+           offer_messenger: 3,   # R points: a job / visa offer + a WhatsApp / Telegram contact on one page (advance-fee job scam, careemglobal.com)
+           offer_words: [job, jobs, vacancy, vacancies, hiring, recruitment, visa, work permit, ajira, kazi, نوكري, وظائف, وظيفة, تأشيرة, فيزا عمل, вакансия, вакансии, виза, naukri, rozgar, trabaho],
+           offer_noise_phrases: [visa card, visa/mastercard, visa & mastercard, visa and mastercard, visa mastercard, "visa, mastercard", mastercard],   # a shop's "we accept Visa" is not a visa offer
+           messenger_patterns: ['wa\.me/', 'api\.whatsapp\.com', 't\.me/\w', '(?:whatsapp|واتساب|واتس اب)\W{0,12}\+?\d[\d\s-]{6,}', 'telegram\W{0,12}(?:@\w{4,}|\+?\d[\d\s-]{6,})'],
+           exfil_hosts: [api.telegram.org, hooks.slack.com]}   # Discord webhooks (discord.com / discordapp.com /api/webhooks/) are built into snapshot_runner

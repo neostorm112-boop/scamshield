@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Takedown draft · {{ fqdn }}{% endblock %}
+{% block content %}
+<main class="takedown">
+  <p><a href="/d/{{ fqdn }}">← Back to {{ fqdn }}</a></p>
+  <h1>Takedown draft</h1>
+  <p class="meta-line">A draft only: ScamShield never sends it. Copy it into your mail, or download it with the evidence list.</p>
+  <p><button class="btn" type="button" id="copy" onclick="navigator.clipboard.writeText(document.getElementById('draft').textContent).then(() => { this.textContent = 'Copied' })">Copy</button>
+    <a class="btn" href="/d/{{ fqdn }}/takedown.txt" download="takedown-{{ fqdn }}.txt">Download .txt</a></p>
+  <pre id="draft">{{ text }}</pre>
+</main>
+{% endblock %}

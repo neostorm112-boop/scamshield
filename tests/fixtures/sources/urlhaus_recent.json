@@ -1,0 +1,8 @@
+{"query_status": "ok", "urls": [
+ {"id": "1", "urlhaus_reference": "https://urlhaus.abuse.ch/url/1/", "url": "http://dwu6.top/rta/pay/index.php", "url_status": "online", "host": "dwu6.top", "date_added": "2026-11-20 14:03:05 UTC", "threat": "malware_download", "tags": ["phishing", "apk"]},
+ {"id": "2", "urlhaus_reference": "https://urlhaus.abuse.ch/url/2/", "url": "http://rta.ae/rta/pay/index.php", "url_status": "online", "host": "rta.ae", "date_added": "2026-11-20 14:04:00 UTC", "threat": "malware_download", "tags": null},
+ {"id": "3", "urlhaus_reference": "https://urlhaus.abuse.ch/url/3/", "url": "https://raw.githubusercontent.com/x/rta/pay/a.sh", "url_status": "online", "host": "raw.githubusercontent.com", "date_added": "2026-11-20 14:05:00 UTC", "threat": "malware_download", "tags": ["elf"]},
+ {"id": "4", "urlhaus_reference": "https://urlhaus.abuse.ch/url/4/", "url": "http://185.1.2.3/rta/pay/a.sh", "url_status": "online", "host": "185.1.2.3", "date_added": "2026-11-20 14:06:00 UTC", "threat": "malware_download", "tags": []},
+ {"id": "5", "urlhaus_reference": "https://urlhaus.abuse.ch/url/5/", "url": "http://old-site.top/rta/pay/a.sh", "url_status": "offline", "host": "old-site.top", "date_added": "2026-11-19 10:00:00 UTC", "threat": "malware_download", "tags": []},
+ {"id": "6", "urlhaus_reference": "https://urlhaus.abuse.ch/url/6/", "url": "http://plain-host.top/bins/mips", "url_status": "online", "host": "plain-host.top", "date_added": "2026-11-20 14:07:00 UTC", "threat": "malware_download", "tags": ["mirai"]}
+]}

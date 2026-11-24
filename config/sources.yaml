@@ -1,0 +1,60 @@
+# Monitoring URLs from https://www.gstatic.com/ct/log_list/v3/log_list.json (tiled_logs), checked 2026-11-19.
+dns:         {kind: enrich, enabled: true, timeout_s: 8, data_mode: LIVE}
+asn:         {kind: enrich, enabled: true, timeout_s: 8, data_mode: LIVE}
+rdap:        {kind: enrich, enabled: true, timeout_s: 8, max_redirects: 3, data_mode: LIVE, min_interval_s: 1.1, backoff_429_s: 60}  # rdap.org: 10 requests / 10 s per IP
+certspotter: {kind: enrich, enabled: true, budget_per_hour: 60, reserve_manual: 40, timeout_s: 8, data_mode: LIVE, key_env: CERTSPOTTER_API_KEY}
+tavily:      {kind: connector, enabled: true, mode: keyless, country: united arab emirates,
+              budget_per_day: 40, cache_hours: 24, schedule_hours: 6, timeout_s: 8, data_mode: LIVE, key_env: TAVILY_API_KEY,
+              # Search results on these sites (and their subdomains) are saved but never queued: well-known platforms, publishers, couriers, stores, government (.gov.ae, u.ae), the search provider
+              benign_domains: [gov.ae, u.ae, dubai.ae, talentera.com, tavily.com, google.com, bing.com, wikipedia.org, facebook.com, instagram.com, youtube.com, x.com, twitter.com,
+                               linkedin.com, tiktok.com, reddit.com, quora.com, scribd.com, medium.com, apps.apple.com, play.google.com, gulfnews.com, khaleejtimes.com,
+                               thenationalnews.com, arabianbusiness.com, fedex.com, dhl.com, ups.com, aramex.com, parcelsapp.com, 17track.net, trustpilot.com, github.com, githubusercontent.com, dropbox.com]}
+ct_tiled:    {kind: connector, enabled: true, poll_seconds: 1, recheck_hours: 6, max_lag_minutes: 60, max_tiles_per_cycle: 64, tile_concurrency: 16, amber_lag_minutes: 5, backoff_max_s: 60, timeout_s: 8, deadline_s: 20, data_mode: LIVE,
+              log_operators: ["Let's Encrypt", "Google", "Geomys"],
+              # Geomys requires a contact email in the User-Agent (env CT_CONTACT_EMAIL, sent only to these hosts); without it those logs are skipped
+              contact_host_suffixes: ["geomys.org"],
+              # these logs lack the names-tile extension: read the data tiles (~1.5 KB per entry, ~100x the names tiles) with their own, lower concurrency so they cannot crowd out the others
+              data_tile_hosts: ["storage.googleapis.com"], data_tile_concurrency: 16, data_tile_max_bytes: 8000000, bad_tile_retries: 5, http_max_connections: 160, expiry_window_days: 100, log_list_refresh_hours: 6,
+              # brand matching of a full tile runs in this many worker processes (0 = in the main process); smaller batches stay in the main process
+              match_processes: 3, match_pool_min_names: 200, match_pool_retry_s: 600,
+              # fallback when the log list is unreachable; shards are by certificate expiry (2027h1 takes today's issuance)
+              logs: ["https://mon.willow.ct.letsencrypt.org/2026h2", "https://mon.sycamore.ct.letsencrypt.org/2026h2",
+                     "https://mon.willow.ct.letsencrypt.org/2027h1", "https://mon.sycamore.ct.letsencrypt.org/2027h1"]}
+feeds:       {kind: connector, enabled: true, refresh_hours: 2, retry_minutes: 10, stale_hours: 12, max_bytes: 100000000, backoff_max_s: 60, timeout_s: 120, data_mode: LIVE,
+              urls: {phishing_database: "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt",
+                     phishing_army: "https://phishing.army/download/phishing_army_blocklist.txt"}}
+              # OpenPhish removed: its terms (openphish.com/terms.html) allow personal/academic use only and bar "distribute, display, disclose"
+              # without written permission — this repo and its screenshots are public display. Back only with OpenPhish's written consent:
+              # openphish: "https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt"
+worker:      {kind: connector, enabled: true, concurrency: 3, backoff_max_s: 60, retry_delays_s: [2, 8], record_failure_tries: 5, record_failure_pause_s: 2, recheck_hours: 24, dns_watch_minutes: 60, timeout_s: 8, data_mode: LIVE}
+# URLhaus (abuse.ch) recent URLs: Auth-Key header, JSON endpoint of urlhaus-api.abuse.ch (docs: https://urlhaus.abuse.ch/api/). Without ABUSECH_AUTH_KEY the source shows "off - no key" and makes no request.
+urlhaus:     {kind: connector, enabled: true, refresh_hours: 2, budget_per_day: 20, timeout_s: 30, data_mode: LIVE, key_env: ABUSECH_AUTH_KEY,
+              url: "https://urlhaus-api.abuse.ch/v1/urls/recent/limit/1000/"}
+# smet.cz newly registered domains, CC BY 4.0, attribution: "smet.cz (https://smet.cz/nrd/)" (https://github.com/smetcz/newly-registered-domains); daily files are
+# sorted, ~200-500k names (3-9 MB), today's grows during the day; two downloads per pull (yesterday + today). batch_lines = names filtered per short database write.
+nrd:         {kind: connector, enabled: true, refresh_hours: 1, budget_per_day: 60, max_bytes: 30000000, timeout_s: 60, deadline_s: 120, batch_lines: 5000, data_mode: LIVE,
+              url: "https://smet.cz/nrd/data/daily/{day}.txt"}
+# urlscan.io Search API (https://docs.urlscan.io/apis/urlscan-openapi/search/searchdatasource): header api-key; a request counts only on HTTP 200, limits are per account and per
+# minute/hour/day (https://docs.urlscan.io/pages/api-rate-limits.md, own numbers at GET /api/v1/quotas; free-tier numbers were not readable without an account),
+# so budget_per_day is kept low on purpose: 6 queries x 4 runs = 24 requests a day. Per brand: page titles (page.title) and SHA-256 of the official favicon file (hash, add after checking it by hand).
+# Account quota read at GET /api/v1/quotas = 1000 searches/day; 6 title + up to 18 favicon queries x 4 runs ~ 96/day.
+urlscan:     {kind: connector, enabled: true, refresh_hours: 3, budget_per_day: 220, timeout_s: 15, data_mode: LIVE, key_env: URLSCAN_API_KEY,
+              url: "https://urlscan.io/api/v1/search/", size: 100, lookback_days: 3, favicons_from_refs: true,
+              queries: {rta: {title: ["Roads and Transport Authority"], favicon_sha256: []},
+                        dubaipolice: {title: ["Dubai Police"], favicon_sha256: []},
+                        aramex: {title: ["Aramex"], favicon_sha256: []},
+                        etisalat: {title: ["Etisalat"], favicon_sha256: []},
+                        emiratespost: {title: ["Emirates Post"], favicon_sha256: []},
+                        icp: {title: ["Identity and Citizenship"], favicon_sha256: []}}}
+# Find relatives (idea 4, analyst click only): same account and key as urlscan, its own daily budget. Per click at most max_queries_per_click urlscan
+# requests in all: the lookup of the case's scan (only when none is stored), the read of that scan (result API) and searches over its own script / style
+# SHA-256, a WebSocket panel host and a rare page IP. A hash / panel whose returned scans (size) sit on popular_max or more DISTINCT registrable domains is a
+# common library or shared service: skipped (a gang main.js = 61 scans on 46 domains, kept). At most max_queued_per_click new domains are queued;
+# domains already in our database only get the link.
+urlscan_relatives: {kind: connector, enabled: true, budget_per_day: 30, timeout_s: 15, data_mode: LIVE, key_env: URLSCAN_API_KEY,
+                    search_url: "https://urlscan.io/api/v1/search/", result_url: "https://urlscan.io/api/v1/result/", size: 100,
+                    max_queries_per_click: 3, popular_max: 50, max_queued_per_click: 25}
+# Page snapshot (ADR 0004): clicks are free; automatic ones for queued GRAY / GRAY_LOW items are limited by budget_per_hour, up to `concurrency` browsers at once (one process each; a manual click has its own slot, so at most concurrency + 1); max_bytes 40 MB: official sites such as rta.ae are > 10 MB
+snapshot:    {kind: enrich, enabled: true, budget_per_hour: 120, concurrency: 3, auto_every_s: 10, hard_kill_s: 25, nav_timeout_s: 15, max_bytes: 40000000, max_requests: 150, max_redirects: 5, min_free_gb: 1, timeout_s: 25, data_mode: LIVE,
+              generic_every: 3,   # every 3rd automatic snapshot goes to a brandless name first (they never got a turn behind UAE brands)
+              resnap_hours: [6, 24, 72]}   # empty / parked / failed page: snapshot again 6 h after the 1st, 24 h after the 2nd, 72 h after the 3rd (kits arrive 6-48 h after the certificate)

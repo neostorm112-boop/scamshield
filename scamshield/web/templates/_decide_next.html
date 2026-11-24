@@ -1,0 +1,1 @@
+{% if last_saved %}<div class="d-next"><span class="saved">Last saved: <span class="mono">{{ last_saved.fqdn }}</span> — {{ {'scam': 'Confirmed scam (analyst)', 'legit': 'Legit (analyst)', 'unclear': 'Unclear (analyst)'}[last_saved.verdict] }} · <time>{{ last_saved.created_at|gst }}</time> · <a href="/d/{{ last_saved.fqdn }}">Open</a></span></div>{% endif %}

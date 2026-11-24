@@ -1,0 +1,5 @@
+{"objectClassName": "domain", "ldhName": "ewp.live",
+ "events": [{"eventAction": "registration", "eventDate": "2026-11-19T10:02:11Z"}],
+ "entities": [{"objectClassName": "entity", "roles": ["reseller"], "vcardArray": ["vcard", [["version", {}, "text", "4.0"], ["fn", {}, "text", "Reseller Ltd"]]]},
+  {"objectClassName": "entity", "roles": ["registrar"], "publicIds": [{"type": "IANA Registrar ID", "identifier": "1068"}],
+   "vcardArray": ["vcard", [["version", {}, "text", "4.0"], ["org", {}, "text", "NameCheap, Inc."]]]}]}

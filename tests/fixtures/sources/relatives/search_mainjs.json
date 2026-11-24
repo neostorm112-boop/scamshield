@@ -1,0 +1,7 @@
+{"total": 5, "took": 22, "has_more": false, "results": [
+ {"task": {"uuid": "b1000000-0000-4000-8000-000000000001", "time": "2026-11-19T08:15:00.000Z", "url": "https://customs-ae-fee.top/pay", "domain": "customs-ae-fee.top"}, "page": {"url": "https://customs-ae-fee.top/pay", "domain": "customs-ae-fee.top", "ip": "198.51.100.9", "asn": "AS64501"}},
+ {"task": {"uuid": "b1000000-0000-4000-8000-000000000002", "time": "2026-11-18T08:15:00.000Z", "url": "https://customs-ae-fee.top/", "domain": "customs-ae-fee.top"}, "page": {"url": "https://customs-ae-fee.top/", "domain": "customs-ae-fee.top", "ip": "198.51.100.9", "asn": "AS64501"}},
+ {"task": {"uuid": "b1000000-0000-4000-8000-000000000003", "time": "2026-11-17T21:40:00.000Z", "url": "https://k7qz2.xyz/", "domain": "k7qz2.xyz"}, "page": {"url": "https://k7qz2.xyz/", "domain": "k7qz2.xyz", "ip": "198.51.100.23", "asn": "AS64502"}},
+ {"task": {"uuid": "0a0a0a0a-1111-4222-8333-444455556666", "time": "2026-11-20T10:00:00.000Z", "url": "https://dubai-customs-pay.top/", "domain": "dubai-customs-pay.top"}, "page": {"url": "https://dubai-customs-pay.top/", "domain": "dubai-customs-pay.top", "ip": "45.155.205.17", "asn": "AS64500"}},
+ {"task": {"uuid": "b1000000-0000-4000-8000-000000000004", "time": "2026-11-16T07:00:00.000Z", "url": "https://www.dubaicustoms.gov.ae/", "domain": "www.dubaicustoms.gov.ae"}, "page": {"url": "https://www.dubaicustoms.gov.ae/", "domain": "www.dubaicustoms.gov.ae", "ip": "192.0.2.50", "asn": "AS64503"}}
+]}

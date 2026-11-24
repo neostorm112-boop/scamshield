@@ -1,0 +1,303 @@
+# Hits of the 4b feed run (op/pd/pa lists, match mode=feed).
+# may_be_noise: judged not a UAE fake in the evidence report; every other row must stay out of NOISE.
+- fqdn: 04notifservicp0stalaramex10-bc6a03.ingress-erytho.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: adcb-abudhabi.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: adib-eg.co
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: adnoc-ai.live
+  feeds:
+  - phishing_army
+  url_path: null
+  may_be_noise: false
+- fqdn: adnoc-sa-ai.com
+  feeds:
+  - phishing_army
+  url_path: null
+  may_be_noise: false
+- fqdn: ae-emiratespost-login.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramax.ipq.co
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramer.jtbbr.ir
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-b09d96.ingress-bonde.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-b3dbea.ingress-daribow.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-b9833c.ingress-earth.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-bd0770.ingress-baronn.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-client.xyz
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-informations.ddns.net
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-internationnal-a525a3.ingress-earth.easywp.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-si-b8b3a6.ingress-earth.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-za-b98024.ingress-erytho.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex-za.tempurl.host
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex.bh-home.delivery.crba.edu.pt
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex.one
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramex.valeriair.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramexaeo3.temp.swtest.ru
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramexservicepaye-login2.codeanyapp.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramexstore2022-b96282.ingress-comporellon.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramextingpackageformulair-bb806d.ingress-florina.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramexxdelivyonlinesupport-b29c67.ingress-earth.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramiex-bdfe97.ingress-erytho.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: aramx-bahrain.yiff.fi
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: arcmex-bus.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: businessonline.etisalat.ae.b2bportal-quickpay.puredirector.xyz
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: cbd.listingprowp.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: citibank.addc.ir
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: true
+- fqdn: dcm2.eim.ae.etisalat.clinicahalito.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: du-ae.lol
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: eand.directsmailsolution.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: ebill.etisalat.ae.crownmanconsulting.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: ebill.etisalat.ae.hajrin.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: emiratesnbd.com.paintechnology.in
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: emiratesnbdkyc.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: emiratespass-online.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: emiratespost.postoman.shop
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etinalat.rest
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etisalat-amazonprime.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etisalat.ae-operatorgift.zoneoneme.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etisalat.ae.dcm1.eim.ae.securityglobal.cl
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etisalat.security.eacg.co.tz
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etisalatae.sa.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: etisalatebills.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: hsbc-ae.info
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: login.etilsalat-claim-egift.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: mail.dewa.kitchen
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: true
+- fqdn: meta-framex-24f.pages.dev
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: myjcblivbankm.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: true
+- fqdn: open-araimex.com.swtest.ru
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: packetlinal2545packaginaramexs-b7d90a.ingress-daribow.ewp.live
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: parcel.emiratespost.ae.bangerpickleball.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: regionalmanagers-my.sharepoint.com.mashreq-c.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: rta.dogestocks.com
+  feeds:
+  - phishing_database
+  url_path: null
+  may_be_noise: false
+- fqdn: smsa-info.it.com
+  feeds:
+  - phishing_army
+  url_path: null
+  may_be_noise: false
+- fqdn: smsa-tracking.com
+  feeds:
+  - phishing_army
+  url_path: null
+  may_be_noise: false
+

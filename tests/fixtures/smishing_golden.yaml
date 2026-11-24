@@ -1,0 +1,37 @@
+# Real smishing hostnames from public reports 2024-2026 (the exact article per hostname was not recorded; all ten + the caught ones come from these three):
+sources:
+  - https://www.resecurity.com/blog/article/cybercriminals-impersonate-dubai-police-to-defraud-consumers-in-the-uae-smishing-triad-in-action
+  - https://www.resecurity.com/blog/article/Smishing-Triad-Impersonates-Emirates-Post-Target-UAE-Citizens
+  - https://www.dexpose.io/chinese-smishing-campaign-large-scale-phishing-kit-targeting-80-brands-20-countries/
+
+# Caught by the pattern rule alone (no brand needed): UAE word + cheap TLD + random-looking short name
+pattern_fake:
+  - dubai.aeizt.top
+
+# Not catchable by name from CT: no UAE word, random name. Only graph links to a queued domain can reach them.
+not_catchable_by_name:
+  - dub.xcber.icu     # "dub" is not a UAE word (dubbing, Dublin)
+  - ws.tyrrt.icu
+  - qad.uhbds.icu
+  - sxf.sagy.site
+  - dwu6.top
+  - rpjpapc.top
+
+# Hard negatives: neither the brand sieve nor the pattern rule may match
+legit:
+  - dubaimall.com
+  - dubaiholding.com
+  - careem.com
+  - tabby.ai
+  - bayut.com
+  - dubai.bakery.shop
+  - fine.print.site
+  - toll.road.top
+  - uae.news.top
+  - police.academy.site
+  - dubai.hotel.vip
+  - abudhabi.coffee.cc
+  - sharjah.books.top
+  - uae-startup.top
+  - parking-uae.top
+  - parkin.shop

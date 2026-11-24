@@ -1,0 +1,543 @@
+# Official domains were checked by DNS (see below); review this list (domains, keywords, queries) before relying on it.
+# verified: true only means every official domain resolved via `dig +short` on 2026-11-19;
+# verified_by/verified_at stay null until a human confirms the entry. aramex.com apex does not resolve (www.aramex.com does).
+
+- id: rta
+  name: "Roads and Transport Authority (Dubai)"
+  official_domains: [rta.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [rta]
+  exclude_tokens: []
+  search_queries: ["pay RTA fine", "RTA fine payment Dubai"]
+
+- id: salik
+  name: "Salik (Dubai toll)"
+  official_domains: [salik.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [salik]
+  exclude_tokens: []
+  search_queries: ["Salik recharge", "Salik fine payment"]
+
+- id: adpolice
+  name: "Abu Dhabi Police"
+  # added 2026-11-20 by harvest_official: abudhabipolice.ae (cert SAN of adpolice.gov.ae (name abudhabipolice.ae)); adpolice.ae (cert SAN of adpolice.gov.ae (name adpolice.ae))
+  official_domains: [adpolice.gov.ae, abudhabipolice.ae, adpolice.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [adpolice, abudhabipolice]
+  exclude_tokens: []
+  search_queries: ["Abu Dhabi Police fine payment"]
+
+- id: dubaipolice
+  name: "Dubai Police"
+  official_domains: [dubaipolice.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [dubaipolice]
+  exclude_tokens: []
+  search_queries: ["Dubai Police fine payment"]
+
+- id: tamm
+  name: "TAMM (Abu Dhabi government services)"
+  official_domains: [tamm.abudhabi]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [tamm]
+  exclude_tokens: [metamask, tammy]
+  search_queries: ["TAMM Abu Dhabi pay fine"]
+
+- id: emiratespost
+  name: "Emirates Post"
+  official_domains: [emiratespost.ae, emiratespostshop.ae]   # emiratespostshop.ae: whois registrant EMIRATES POST GROUP, linked from emiratespost.ae (checked 2026-11-21)
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [emiratespost]
+  exclude_tokens: []
+  search_queries: ["Emirates Post parcel fee"]
+
+- id: aramex
+  name: "Aramex"
+  official_domains: [aramex.com]
+  verified: false
+  verified_by: null
+  verified_at: null
+  keywords: [aramex]
+  exclude_tokens: []
+  search_queries: ["Aramex delivery fee", "Aramex track parcel UAE"]
+
+- id: etisalat
+  name: "Etisalat by e&"
+  # added 2026-11-20 by harvest_official: eand.ae (cert SAN of etisalat.ae (name eand.ae)); etisalat.com (cert SAN of etisalat.ae (name etisalat.com))
+  official_domains: [etisalat.ae, eand.com, eand.ae, etisalat.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [etisalat, eand]
+  exclude_tokens: []
+  search_queries: ["Etisalat bill payment"]
+
+- id: du
+  name: "du (Emirates Integrated Telecommunications)"
+  # added 2026-11-20 by harvest_official: du.com (cert SAN of du.ae (name du.com))
+  official_domains: [du.ae, du.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [du]
+  exclude_tokens: []
+  search_queries: ["du bill payment UAE"]
+
+- id: adcb
+  name: "Abu Dhabi Commercial Bank (ADCB)"
+  official_domains: [adcb.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [adcb]
+  exclude_tokens: []
+  search_queries: ["ADCB online banking login"]
+
+- id: enbd
+  name: "Emirates NBD"
+  official_domains: [emiratesnbd.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [emiratesnbd, enbd]
+  exclude_tokens: []
+  search_queries: ["Emirates NBD online banking login"]
+
+- id: mashreq
+  name: "Mashreq Bank"
+  # added 2026-11-20 by harvest_official: mashreqbank.com (cert SAN of www.mashreq.com (name mashreqbank.com))
+  official_domains: [mashreq.com, mashreqbank.com, mashreqalislami.com]   # mashreqalislami.com: Mashreq Al Islami (Islamic banking arm), registered 2009, DigiCert, Radware like mashreq.com; a live run flagged it as a false hit
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [mashreq]
+  exclude_tokens: []
+  search_queries: ["Mashreq online banking login"]
+
+- id: icp
+  name: "Federal Authority for Identity and Citizenship (ICP)"
+  official_domains: [icp.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [icp]
+  exclude_tokens: []
+  search_queries: ["ICP UAE emirates id renewal"]
+
+- id: mohre
+  name: "Ministry of Human Resources and Emiratisation (MOHRE)"
+  # added 2026-11-20 by harvest_official: mohre.ae (cert SAN of mohre.gov.ae (name digital.mohre.ae))
+  official_domains: [mohre.gov.ae, mohre.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [mohre]
+  exclude_tokens: []
+  search_queries: ["MOHRE UAE work permit"]
+
+- id: darb
+  name: "Darb (Abu Dhabi toll)"
+  official_domains: [darb.ae, qmobility.ae]   # Q Mobility (ADQ) operates Darb; darb.qmobility.ae is the official portal (qmobility.ae/en/faqs/darb-faqs)
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [darb]
+  exclude_tokens: []
+  search_queries: ["Darb toll payment"]
+
+- id: uaepass
+  name: "UAE Pass (national digital ID)"
+  official_domains: [uaepass.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [uaepass]
+  exclude_tokens: []
+  search_queries: ["UAE Pass login verify"]
+
+- id: dewa
+  name: "Dubai Electricity and Water Authority (DEWA)"
+  official_domains: [dewa.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [dewa]
+  exclude_tokens: [dew4, toto, togel, slot, slots, poker, gacor, judi, casino, kasino, bet, jackpot]
+  search_queries: ["DEWA bill payment"]
+
+- id: sewa
+  name: "Sharjah Electricity, Water and Gas Authority (SEWA)"
+  official_domains: [sewa.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [sewa]
+  exclude_tokens: []
+  search_queries: []
+
+- id: addc
+  name: "TAQA Distribution (ADDC, Abu Dhabi)"
+  official_domains: [addc.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [addc, taqa]
+  exclude_tokens: []
+  search_queries: []
+
+- id: etihadwe
+  name: "Etihad Water and Electricity"
+  official_domains: [etihadwe.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [etihadwe]
+  exclude_tokens: []
+  search_queries: []
+
+- id: parkin
+  name: "Parkin (Dubai parking)"
+  official_domains: [parkin.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [parkin-fine, parkin-pay, parkin-dubai, parkin]
+  exclude_tokens: []
+  search_queries: ["Parkin fine payment"]
+
+- id: dubaicustoms
+  name: "Dubai Customs"
+  official_domains: [dubaicustoms.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [dubaicustoms]
+  exclude_tokens: []
+  search_queries: []
+
+- id: adcustoms
+  name: "Abu Dhabi Customs"
+  official_domains: [adcustoms.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [abudhabicustoms]
+  exclude_tokens: []
+  search_queries: []
+
+- id: moi
+  name: "Ministry of Interior"
+  official_domains: [moi.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [moi]
+  exclude_tokens: []
+  search_queries: ["MOI UAE traffic fine pay"]
+
+- id: mofa
+  name: "Ministry of Foreign Affairs"
+  official_domains: [mofa.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [mofa]
+  exclude_tokens: []
+  search_queries: []
+
+- id: gdrfad
+  name: "GDRFA Dubai (residency and visas)"
+  # added 2026-11-20 by harvest_official: gdrfad.ae (cert SAN of gdrfad.gov.ae (name gdrfad.ae))
+  official_domains: [gdrfad.gov.ae, gdrfad.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [gdrfa, gdrfad]
+  exclude_tokens: []
+  search_queries: []
+
+- id: amer
+  name: "Amer (Dubai visa centres)"
+  official_domains: [amer.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [ameruae, amerdubai]
+  exclude_tokens: []
+  search_queries: []
+
+- id: moec
+  name: "Ministry of Economy"
+  official_domains: [moec.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [moec]
+  exclude_tokens: []
+  search_queries: []
+
+- id: dm
+  name: "Dubai Municipality"
+  official_domains: [dm.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [dubaimunicipality]
+  exclude_tokens: []
+  search_queries: []
+
+- id: mohap
+  name: "Ministry of Health and Prevention"
+  official_domains: [mohap.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [mohap]
+  exclude_tokens: []
+  search_queries: []
+
+- id: dubaicourts
+  name: "Dubai Courts"
+  official_domains: [dc.gov.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [dubaicourts]
+  exclude_tokens: []
+  search_queries: []
+
+- id: adnocdist
+  name: "ADNOC Distribution"
+  # adnoc.ae added 2026-11-20 after a live run: ADNOC Group's own domain (11 subdomains such as auth.cra.adg.adnoc.ae were queued as fakes); resolves (dig)
+  official_domains: [adnocdistribution.ae, adnoc.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [adnoc]
+  exclude_tokens: []
+  search_queries: []
+
+- id: fab
+  name: "First Abu Dhabi Bank (FAB)"
+  official_domains: [bankfab.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [bankfab, fab, firstabudhabi]
+  exclude_tokens: []
+  search_queries: ["FAB bank account update"]
+
+- id: adib
+  name: "Abu Dhabi Islamic Bank (ADIB)"
+  # added 2026-11-20 by harvest_official: adib.co.uk (cert SAN of adib.ae (name adib.co.uk)); adib.com (cert SAN of adib.ae (name adib.com)); adib.iq (cert SAN of adib.ae (name adib.iq)); adib.qa (cert SAN of adib.ae (name adib.qa)); adibcapital.ae (cert SAN of adib.ae (name adibcapital.ae)); adibsecurities.ae (cert SAN of adib.ae (name adibsecurities.ae))
+  official_domains: [adib.ae, adib.co.uk, adib.com, adib.iq, adib.qa, adibcapital.ae, adibsecurities.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [adib]
+  exclude_tokens: []
+  search_queries: []
+
+- id: dib
+  name: "Dubai Islamic Bank (DIB)"
+  official_domains: [dib.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [dib]
+  exclude_tokens: []
+  search_queries: []
+
+- id: cbd
+  name: "Commercial Bank of Dubai (CBD)"
+  official_domains: [cbd.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [cbd]
+  exclude_tokens: []
+  search_queries: []
+
+- id: rakbank
+  name: "RAKBANK"
+  official_domains: [rakbank.ae, rakbankonline.ae]   # rakbankonline.ae: .ae WHOIS registrant National Bank of Ras Al Khaimah P.S.C, same Cloudflare NS pair as rakbank.ae; a live run flagged kyc.rakbankonline.ae as a false hit
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [rakbank]
+  exclude_tokens: [akbank]
+  search_queries: []
+
+- id: emiratesislamic
+  name: "Emirates Islamic"
+  official_domains: [emiratesislamic.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [emiratesislamic]
+  exclude_tokens: []
+  search_queries: []
+
+- id: liv
+  name: "Liv (Emirates NBD digital bank)"
+  official_domains: [liv.me]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [livbank]
+  exclude_tokens: []
+  search_queries: []
+
+- id: wio
+  name: "Wio Bank"
+  official_domains: [wio.io]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [wio, wiobank]
+  exclude_tokens: []
+  search_queries: []
+
+- id: hsbcae
+  name: "HSBC UAE"
+  # added 2026-11-20 by harvest_official: hsbc.com.hk (cert SAN of hsbc.ae (name developer.hsbc.com.hk)); hsbc.co.nz (cert SAN of hsbc.ae (name ebanking.hsbc.co.nz)); hsbc.am (cert SAN of hsbc.ae (name hsbc.am)); hsbc.bank.in (cert SAN of hsbc.ae (name hsbc.bank.in)); hsbc.bm (cert SAN of hsbc.ae (name hsbc.bm)); hsbc.ca (cert SAN of hsbc.ae (name hsbc.ca)); hsbc.cn (cert SAN of hsbc.ae (name hsbc.cn)); hsbc.co.id (cert SAN of hsbc.ae (name hsbc.co.id)); hsbc.co.in (cert SAN of hsbc.ae (name hsbc.co.in)); hsbc.co.mu (cert SAN of hsbc.ae (name hsbc.co.mu)); hsbc.co.om (cert SAN of hsbc.ae (name hsbc.co.om)); hsbc.co.uk (cert SAN of hsbc.ae (name hsbc.co.uk)); hsbc.com.ar (cert SAN of hsbc.ae (name hsbc.com.ar)); hsbc.com.au (cert SAN of hsbc.ae (name hsbc.com.au)); hsbc.com.bd (cert SAN of hsbc.ae (name hsbc.com.bd)); hsbc.com.bh (cert SAN of hsbc.ae (name hsbc.com.bh)); hsbc.com.cn (cert SAN of hsbc.ae (name hsbc.com.cn)); hsbc.com.eg (cert SAN of hsbc.ae (name hsbc.com.eg)); hsbc.com.lk (cert SAN of hsbc.ae (name hsbc.com.lk)); hsbc.com.mo (cert SAN of hsbc.ae (name hsbc.com.mo)); hsbc.com.mt (cert SAN of hsbc.ae (name hsbc.com.mt)); hsbc.com.mx (cert SAN of hsbc.ae (name hsbc.com.mx)); hsbc.com.my (cert SAN of hsbc.ae (name hsbc.com.my)); hsbc.com.ph (cert SAN of hsbc.ae (name hsbc.com.ph)); hsbc.com.qa (cert SAN of hsbc.ae (name hsbc.com.qa)); hsbc.com.sg (cert SAN of hsbc.ae (name hsbc.com.sg)); hsbc.com.tw (cert SAN of hsbc.ae (name hsbc.com.tw)); hsbc.com.vn (cert SAN of hsbc.ae (name hsbc.com.vn)); hsbc.fr (cert SAN of hsbc.ae (name hsbc.fr)); hsbc.gr (cert SAN of hsbc.ae (name hsbc.gr)); hsbc.lk (cert SAN of hsbc.ae (name hsbc.lk)); hsbc.mx (cert SAN of hsbc.ae (name hsbc.mx)); hsbc.my (cert SAN of hsbc.ae (name hsbc.my)); hsbc.uk (cert SAN of hsbc.ae (name hsbc.uk)); hsbcadvance.co.in (cert SAN of hsbc.ae (name hsbcadvance.co.in)); hsbcadvance.com.cn (cert SAN of hsbc.ae (name hsbcadvance.com.cn)); hsbcadvance.com.my (cert SAN of hsbc.ae (name hsbcadvance.com.my)); hsbcadvance.com.ph (cert SAN of hsbc.ae (name hsbcadvance.com.ph)); hsbcadvance.com.sg (cert SAN of hsbc.ae (name hsbcadvance.com.sg)); hsbcadvance.com.tw (cert SAN of hsbc.ae (name hsbcadvance.com.tw)); hsbcadvance.in (cert SAN of hsbc.ae (name hsbcadvance.in)); hsbcadvance.my (cert SAN of hsbc.ae (name hsbcadvance.my)); hsbcadvance.ph (cert SAN of hsbc.ae (name hsbcadvance.ph)); hsbcadvanceusa.com (cert SAN of hsbc.ae (name hsbcadvanceusa.com)); hsbcamanah.com.my (cert SAN of hsbc.ae (name hsbcamanah.com.my)); hsbcamanah.my (cert SAN of hsbc.ae (name hsbcamanah.my)); hsbccreditcard.com (cert SAN of hsbc.ae (name hsbccreditcard.com)); hsbcdirect.com (cert SAN of hsbc.ae (name hsbcdirect.com)); hsbcinsurance.com.cn (cert SAN of hsbc.ae (name hsbcinsurance.com.cn)); hsbclife.com.sg (cert SAN of hsbc.ae (name hsbclife.com.sg)); hsbcpremier.com.au (cert SAN of hsbc.ae (name hsbcpremier.com.au)); hsbcpremier.com.my (cert SAN of hsbc.ae (name hsbcpremier.com.my)); hsbcpremier.com.ph (cert SAN of hsbc.ae (name hsbcpremier.com.ph)); hsbcpremier.com.vn (cert SAN of hsbc.ae (name hsbcpremier.com.vn)); hsbcpremierusa.com (cert SAN of hsbc.ae (name hsbcpremierusa.com))
+  official_domains: [hsbc.ae, hsbc.com, hsbc.com.hk, hsbc.co.nz, hsbc.am, hsbc.bank.in, hsbc.bm, hsbc.ca, hsbc.cn, hsbc.co.id, hsbc.co.in, hsbc.co.mu, hsbc.co.om, hsbc.co.uk, hsbc.com.ar, hsbc.com.au, hsbc.com.bd, hsbc.com.bh, hsbc.com.cn, hsbc.com.eg, hsbc.com.lk, hsbc.com.mo, hsbc.com.mt, hsbc.com.mx, hsbc.com.my, hsbc.com.ph, hsbc.com.qa, hsbc.com.sg, hsbc.com.tw, hsbc.com.vn, hsbc.fr, hsbc.gr, hsbc.lk, hsbc.mx, hsbc.my, hsbc.uk, hsbcadvance.co.in, hsbcadvance.com.cn, hsbcadvance.com.my, hsbcadvance.com.ph, hsbcadvance.com.sg, hsbcadvance.com.tw, hsbcadvance.in, hsbcadvance.my, hsbcadvance.ph, hsbcadvanceusa.com, hsbcamanah.com.my, hsbcamanah.my, hsbccreditcard.com, hsbcdirect.com, hsbcinsurance.com.cn, hsbclife.com.sg, hsbcpremier.com.au, hsbcpremier.com.my, hsbcpremier.com.ph, hsbcpremier.com.vn, hsbcpremierusa.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [hsbc]
+  exclude_tokens: []
+  search_queries: []
+
+- id: citiae
+  name: "Citibank UAE"
+  # added 2026-11-20 by harvest_official: citibank.co.id (cert SAN of citibank.ae (name citibank.co.id)); citibank.co.kr (cert SAN of citibank.ae (name citibank.co.kr)); citibank.co.th (cert SAN of citibank.ae (name citibank.co.th)); citibank.co.uk (cert SAN of citibank.ae (name citibank.co.uk)); citibank.com (cert SAN of citibank.ae (name citibank.com)); citibank.com.cn (cert SAN of citibank.ae (name citibank.com.cn)); citibank.com.hk (cert SAN of citibank.ae (name citibank.com.hk)); citibank.com.sg (cert SAN of citibank.ae (name citibank.com.sg)); citibank.com.vn (cert SAN of citibank.ae (name citibank.com.vn)); citibank.cz (cert SAN of citibank.ae (name citibank.cz)); citibank.hu (cert SAN of citibank.ae (name citibank.hu)); citibank.pl (cert SAN of citibank.ae (name citibank.pl)); citibank.sk (cert SAN of citibank.ae (name citibank.sk)); citibankonline.pl (cert SAN of citibank.ae (name citibankonline.pl)); citibank.eu (cert SAN of citibank.ae (name ipb.citibank.eu)); citibank.com.tw (cert SAN of citibank.ae (name www.citibank.com.tw))
+  official_domains: [citibank.ae, citibank.co.id, citibank.co.kr, citibank.co.th, citibank.co.uk, citibank.com, citibank.com.cn, citibank.com.hk, citibank.com.sg, citibank.com.vn, citibank.cz, citibank.hu, citibank.pl, citibank.sk, citibankonline.pl, citibank.eu, citibank.com.tw, citigroup.com, citi.com]   # citigroup.com, citi.com: EV certificate O=Citigroup Inc. (checked 2026-11-21; urlscan favicon hits)
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [citibank]
+  exclude_tokens: []
+  search_queries: []
+
+- id: eandmoney
+  name: "e& money"
+  official_domains: [eandmoney.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [eandmoney]
+  exclude_tokens: []
+  search_queries: []
+
+- id: payit
+  name: "Payit (FAB wallet)"
+  official_domains: [payit.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [payit]
+  exclude_tokens: []
+  search_queries: []
+
+- id: virginmobileae
+  name: "Virgin Mobile UAE"
+  official_domains: [virginmobile.ae]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [virginmobile]
+  exclude_tokens: []
+  search_queries: []
+
+- id: careem
+  name: "Careem"
+  official_domains: [careem.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [careem]
+  exclude_tokens: [career, careers, hareem, careum, caream, caree, careernext]
+  search_queries: []
+
+- id: talabat
+  name: "Talabat"
+  official_domains: [talabat.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [talabat]
+  exclude_tokens: []
+  search_queries: []
+
+- id: smsa
+  name: "SMSA Express"
+  official_domains: [smsaexpress.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [smsa]
+  exclude_tokens: []
+  search_queries: []
+
+- id: noon
+  name: "noon"
+  official_domains: [noon.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [noon-pay, noon-uae]
+  exclude_tokens: []
+  search_queries: []
+
+- id: emiratesair
+  name: "Emirates (airline)"
+  official_domains: [emirates.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [skywards, emiratesairline]
+  exclude_tokens: []
+  search_queries: []
+
+- id: etihadair
+  name: "Etihad Airways"
+  official_domains: [etihad.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [etihadairways, etihadguest]
+  exclude_tokens: []
+  search_queries: []
+
+- id: flydubai
+  name: "flydubai"
+  official_domains: [flydubai.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [flydubai]
+  exclude_tokens: []
+  search_queries: []
+
+- id: airarabia
+  name: "Air Arabia"
+  official_domains: [airarabia.com]
+  verified: true
+  verified_by: null
+  verified_at: null
+  keywords: [airarabia]
+  exclude_tokens: [akarabia]
+  search_queries: []

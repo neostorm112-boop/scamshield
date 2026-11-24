@@ -1,0 +1,4 @@
+{"objectClassName": "domain", "ldhName": "EXAMPLE.COM",
+ "events": [{"eventAction": "registration", "eventDate": "1995-08-14T04:00:00Z"}, {"eventAction": "last changed", "eventDate": "2026-08-14T07:01:34Z"}],
+ "entities": [{"objectClassName": "entity", "roles": ["registrar"], "publicIds": [{"type": "IANA Registrar ID", "identifier": "292"}],
+   "vcardArray": ["vcard", [["version", {}, "text", "4.0"], ["fn", {}, "text", "MarkMonitor Inc."]]]}]}

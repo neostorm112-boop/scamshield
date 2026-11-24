@@ -1,0 +1,70 @@
+{
+ "results": [
+  {
+   "task": {
+    "uuid": "01a1f97a-ffe1-7258-bd3d-5b783cb49de0",
+    "time": "2026-11-20T15:02:50.216Z",
+    "domain": "rta-fines.example-scam.top",
+    "url": "http://rta-fines.example-scam.top/"
+   },
+   "page": {
+    "domain": "rta-fines.example-scam.top",
+    "title": "Roads and Transport Authority - Pay fines",
+    "url": "https://rta-fines.example-scam.top/"
+   },
+   "verdicts": {
+    "overall": {
+     "malicious": true
+    }
+   }
+  },
+  {
+   "task": {
+    "uuid": "11111111-ffe1-7258-bd3d-5b783cb49de0",
+    "time": "2026-11-20T15:03:00.000Z"
+   },
+   "page": {
+    "domain": "www.rta.ae",
+    "title": "Roads and Transport Authority"
+   }
+  },
+  {
+   "task": {
+    "uuid": "22222222-ffe1-7258-bd3d-5b783cb49de0",
+    "time": "2026-11-20T15:04:00.000Z"
+   },
+   "page": {
+    "domain": "en.wikipedia.org",
+    "title": "Roads and Transport Authority - Wikipedia"
+   }
+  },
+  {
+   "task": {
+    "uuid": "33333333-ffe1-7258-bd3d-5b783cb49de0",
+    "time": "2026-11-20T15:05:00.000Z"
+   },
+   "page": {
+    "domain": "10.0.0.1",
+    "title": "Roads and Transport Authority"
+   }
+  },
+  {
+   "task": {
+    "uuid": "01a1f97a-ffe1-7258-bd3d-5b783cb49de1",
+    "time": "2026-11-20T15:02:50.216Z",
+    "domain": "rta-fines.example-scam.top",
+    "url": "http://rta-fines.example-scam.top/"
+   },
+   "page": {
+    "domain": "gulfnews.com",
+    "title": "Roads and Transport Authority announces new fines | Gulf News",
+    "url": "https://gulfnews.com/uae/transport/rta-new-fines-1.1"
+   },
+   "verdicts": {
+    "overall": {
+     "malicious": true
+    }
+   }
+  }
+ ]
+}

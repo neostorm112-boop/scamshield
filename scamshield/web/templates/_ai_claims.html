@@ -1,0 +1,8 @@
+{% macro cites(ids) %}{% for i in ids %}<a href="#E{{ i }}">E{{ i }}</a>{{ ' ' if not loop.last }}{% endfor %}{% endmacro %}
+{% set e = case.explanation.explanation if case.explanation else None %}
+{% if e %}<h3>AI explanation, with evidence</h3>
+  {% for c in e.supporting %}<p class="g-reason"><span class="h">{{ c.claim }}</span><span class="m">{{ cites(c.evidence_ids) }}</span></p>{% endfor %}
+  {% for c in e.counter %}<p class="g-reason"><span class="h">Against: {{ c.claim }}</span><span class="m">{{ cites(c.evidence_ids) }}</span></p>{% endfor %}
+  {% if e.uncertainties %}<p class="muted-line">Unclear: {{ e.uncertainties|join('; ') }}</p>{% endif %}
+  {% if e.recommended_next_checks %}<p class="muted-line">Next checks: {{ e.recommended_next_checks|join('; ') }}</p>{% endif %}
+{% endif %}

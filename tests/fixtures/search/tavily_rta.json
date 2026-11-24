@@ -1,0 +1,6 @@
+{"query": "pay RTA fine", "results": [
+ {"url": "https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=521", "title": "Service Details - Roads & Transport Authority", "content": "Pay vehicle fines", "score": 0.9},
+ {"url": "https://rta-fines-pay.example-scam.com/pay?id=1", "title": "Pay RTA fine online", "content": "Pay now", "score": 0.5},
+ {"url": "https://rta-fines-pay.example-scam.com/other", "title": "Second page of same site", "content": "x", "score": 0.4},
+ {"url": "https://gulfnews.example.com/rta-fines", "title": "How to pay fines", "content": "x", "score": 0.3}
+]}

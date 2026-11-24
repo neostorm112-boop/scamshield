@@ -1,0 +1,19 @@
+# Live mode and the effectiveness report (metric ids M1..M11 are defined in scamshield/tools/effectiveness.py). Seconds unless the name says otherwise.
+pause_gap_s: 180            # no worker heartbeat for this long inside one process = the machine slept or froze
+stale_s: {default: 300, feeds: 10800, nrd: 7200}   # a loop with no ok heartbeat for this long is degraded
+offline_after_s: 600        # no loop answered for this long = OFFLINE
+catchup_label_s: 600        # cert issued this much before we read it is shown as "issued X, read Y"
+min_window_s: 3600         # report: M1 is graded only over runs at least this long
+gap_after_s: 180            # report: two ok heartbeats further apart than this are a gap
+lead_margin_s: 600          # report: lead time is claimed only above refresh interval + this
+refresh_interval_s: 7200    # feeds refresh in live runs (matches sources.yaml refresh_hours)
+label: {decoy_share: 0.2, sieve_sample: 30, seed: 20261120}
+thresholds:                 # GOOD / BAD limits for the report verdicts
+  m1_coverage_pct: 99
+  m2_ct_uptime_pct: 98
+  m2_worker_uptime_pct: 99
+  m3_lag_p95_s: 120
+  m4_ct_ingest_p95_s: 300
+  m4_check_p95_s: 60
+  m10_llm_usd_day: 5     # AI spend <= $5/day
+  m10_tavily_day: 40

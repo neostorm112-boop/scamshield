@@ -1,0 +1,814 @@
+{
+ "brands": {
+  "rta": [
+   {
+    "domain": "rta.ae",
+    "page": "f9e0e07134301c6a",
+    "logo": "74c080c080a4c464",
+    "favicon": null
+   }
+  ],
+  "salik": [
+   {
+    "domain": "salik.ae",
+    "page": "9af779370f0fccc4",
+    "logo": "30282a3a38996a95",
+    "favicon": null
+   }
+  ],
+  "adpolice": [
+   {
+    "domain": "adpolice.gov.ae",
+    "page": "6dbf9bf9f4ea800d",
+    "logo": "0404acc4d4d48404",
+    "favicon": null
+   },
+   {
+    "domain": "abudhabipolice.ae",
+    "page": "6dbf9bf9f4ea800d",
+    "logo": "0404acc4d4d48404",
+    "favicon": null
+   },
+   {
+    "domain": "adpolice.ae",
+    "page": "6dbf9bf9f4ea800d",
+    "logo": "0404acc4d4d48404",
+    "favicon": null
+   }
+  ],
+  "dubaipolice": [
+   {
+    "domain": "dubaipolice.gov.ae",
+    "page": "860361616d650dbb",
+    "logo": null,
+    "favicon": null
+   }
+  ],
+  "tamm": [
+   {
+    "domain": "tamm.abudhabi",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   }
+  ],
+  "emiratespost": [
+   {
+    "domain": "emiratespost.ae",
+    "page": "dcc0d08000c0c08e",
+    "logo": "60c0c09cd6466030",
+    "favicon": null
+   }
+  ],
+  "aramex": [
+   {
+    "domain": "aramex.com",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   }
+  ],
+  "etisalat": [
+   {
+    "domain": "etisalat.ae",
+    "page": "82cad8e48d92e08e",
+    "logo": "a5ad73ada32dadb2",
+    "favicon": null
+   },
+   {
+    "domain": "eand.com",
+    "page": "0006d628964fd8ac",
+    "logo": "00658569b2adb200",
+    "favicon": null
+   },
+   {
+    "domain": "eand.ae",
+    "page": "82cad8e48d92e08e",
+    "logo": "a5ad73ada32dadb2",
+    "favicon": null
+   },
+   {
+    "domain": "etisalat.com",
+    "page": "0006d628964fd8ac",
+    "logo": "00658569b2adb200",
+    "favicon": null
+   }
+  ],
+  "du": [
+   {
+    "domain": "du.ae",
+    "page": "b01e1e16160cc8d4",
+    "logo": "b016161616160f8c",
+    "favicon": null
+   }
+  ],
+  "adcb": [],
+  "enbd": [
+   {
+    "domain": "emiratesnbd.com",
+    "page": "d40003c08880ecf0",
+    "logo": "409191a9b585a4e4",
+    "favicon": "f8ce255a2a81415bc8ac662dbcf3f850b3076c5259c00d5e067e1d159bfbd841"
+   }
+  ],
+  "mashreq": [],
+  "icp": [
+   {
+    "domain": "icp.gov.ae",
+    "page": "dd8cac80b0e4e87a",
+    "logo": "005054445d595900",
+    "favicon": "ca6ed641bf2126379e86ceb76eb4e721f9a4da02d10aff9b1e1bff41aace44da"
+   }
+  ],
+  "mohre": [
+   {
+    "domain": "mohre.gov.ae",
+    "page": "18d6c2c2e2ceee0a",
+    "logo": "002824058a9b1010",
+    "favicon": "9d7570d085f2aad9554f915f89a2348670461d2e2afab4c91f947ba048242ae7"
+   },
+   {
+    "domain": "mohre.ae",
+    "page": "18d6c2c2e2ceee0a",
+    "logo": "002824058a9b1010",
+    "favicon": "9d7570d085f2aad9554f915f89a2348670461d2e2afab4c91f947ba048242ae7"
+   }
+  ],
+  "darb": [
+   {
+    "domain": "darb.ae",
+    "page": "f8d4413900000000",
+    "logo": "4f0f170f0f330f0e",
+    "favicon": "00e283eb19932106ed7f716af6c3f8c152556c5b63e1b914c1e329648985fc69"
+   }
+  ],
+  "uaepass": [
+   {
+    "domain": "uaepass.ae",
+    "page": "0c4e531c3c5f1f8c",
+    "logo": "5252c5e5e2ca4b5c",
+    "favicon": null
+   }
+  ],
+  "dewa": [
+   {
+    "domain": "dewa.gov.ae",
+    "page": "616a27238be9d7c3",
+    "logo": "09686a2a66525080",
+    "favicon": null
+   }
+  ],
+  "sewa": [
+   {
+    "domain": "sewa.gov.ae",
+    "page": "1d890e0f1f38b828",
+    "logo": "d2929e75355b5a92",
+    "favicon": null
+   }
+  ],
+  "addc": [
+   {
+    "domain": "addc.ae",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   }
+  ],
+  "etihadwe": [],
+  "parkin": [
+   {
+    "domain": "parkin.ae",
+    "page": null,
+    "logo": "0f71c1c0b08d710f",
+    "favicon": null
+   }
+  ],
+  "dubaicustoms": [
+   {
+    "domain": "dubaicustoms.gov.ae",
+    "page": "844f9915cc33a5e2",
+    "logo": "01001a11c8ba5d59",
+    "favicon": "57bae969f80e5d326466a463cc5e79eed3f606cd4abb76af895374752079ce2e"
+   }
+  ],
+  "adcustoms": [
+   {
+    "domain": "adcustoms.gov.ae",
+    "page": "440f2e583890700f",
+    "logo": "317494355159646d",
+    "favicon": "396fd99dbfec338fa1f2a36625405ce6cb1e66d5d16257a009a2a366c946cbb8"
+   }
+  ],
+  "moi": [
+   {
+    "domain": "moi.gov.ae",
+    "page": null,
+    "logo": "cc92969696cce8e0",
+    "favicon": null
+   }
+  ],
+  "mofa": [],
+  "gdrfad": [
+   {
+    "domain": "gdrfad.gov.ae",
+    "page": "840000006976023a",
+    "logo": "553aa6a2ac48890e",
+    "favicon": null
+   },
+   {
+    "domain": "gdrfad.ae",
+    "page": "840000006976023a",
+    "logo": "553aa6a2ac48890e",
+    "favicon": null
+   }
+  ],
+  "amer": [],
+  "moec": [],
+  "dm": [
+   {
+    "domain": "dm.gov.ae",
+    "page": "860e55a934b181e4",
+    "logo": "b9aeaedeb4b11191",
+    "favicon": null
+   }
+  ],
+  "mohap": [
+   {
+    "domain": "mohap.gov.ae",
+    "page": "e8ec21dc12e4d22c",
+    "logo": "0080a0b2ac818000",
+    "favicon": "9f87ecba3d89ab2dee34e8cbbb58c6dfec735822adcdba91856b765afe631176"
+   }
+  ],
+  "dubaicourts": [
+   {
+    "domain": "dc.gov.ae",
+    "page": "94703d000002334d",
+    "logo": "432359b94bbbf603",
+    "favicon": null
+   }
+  ],
+  "adnocdist": [
+   {
+    "domain": "adnocdistribution.ae",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   }
+  ],
+  "fab": [
+   {
+    "domain": "bankfab.com",
+    "page": "4d83820084276b55",
+    "logo": "56a6659b979ba597",
+    "favicon": "972919c924cab5254d38e36059b9698811b5fb01e2df5eb52a814e08a2135627"
+   }
+  ],
+  "adib": [
+   {
+    "domain": "adib.ae",
+    "page": "8f1558e6c9003051",
+    "logo": "20222d2d25ad2120",
+    "favicon": "c0666d6897a00bfd8aab02005c239902adbba3e5a0302d69e630e00ccd64855f"
+   },
+   {
+    "domain": "adib.co.uk",
+    "page": "8a23332bab333333",
+    "logo": "2022242a252da8a0",
+    "favicon": "819d84153f3157e941ce08dcdd75ecc46db8598a8d7bb19c5367cf4b2d4133d7"
+   },
+   {
+    "domain": "adib.com",
+    "page": "8f1558e6c9003051",
+    "logo": "20222d2d25ad2120",
+    "favicon": "c0666d6897a00bfd8aab02005c239902adbba3e5a0302d69e630e00ccd64855f"
+   },
+   {
+    "domain": "adib.iq",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   },
+   {
+    "domain": "adib.qa",
+    "page": "53b2aa0000000000",
+    "logo": "a2e6cce5e5a1aed4",
+    "favicon": null
+   },
+   {
+    "domain": "adibsecurities.ae",
+    "page": "79bfbf1988011636",
+    "logo": "1090d3dbdad2a210",
+    "favicon": "2518021231a61c2a09154327a17cc697bc70c2c53a1af05c0835461f90dc30cb"
+   }
+  ],
+  "dib": [
+   {
+    "domain": "dib.ae",
+    "page": "33cc26d8c55dc3a8",
+    "logo": "252b2b2373632b00",
+    "favicon": null
+   }
+  ],
+  "cbd": [
+   {
+    "domain": "cbd.ae",
+    "page": "cc29b97c5f7f351e",
+    "logo": "8b89565d4b4c4b56",
+    "favicon": "69ede3c5136df7958e67de57e1f787e42bd15864dba46607d5b5cef7db97960d"
+   }
+  ],
+  "rakbank": [
+   {
+    "domain": "rakbank.ae",
+    "page": "3110f1d4750202fe",
+    "logo": "909099969696968a",
+    "favicon": null
+   }
+  ],
+  "emiratesislamic": [],
+  "liv": [
+   {
+    "domain": "liv.me",
+    "page": "c056390080000100",
+    "logo": "181c143c296b0f2b",
+    "favicon": "108c51b26a24585bf4f7af2654bd9e857cfa67906c3a94b88bebd8c56b68a824"
+   }
+  ],
+  "wio": [
+   {
+    "domain": "wio.io",
+    "page": "0000707068d00000",
+    "logo": null,
+    "favicon": "407d991b45ccddfc34a594696bc445cc2a24dc0df5f8e503b317b7fcf4121bfd"
+   }
+  ],
+  "hsbcae": [
+   {
+    "domain": "hsbc.ae",
+    "page": "c8ce1f17a8808088",
+    "logo": "c0c068642c68c8c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com",
+    "page": "b30d132129416141",
+    "logo": "c0ca5e54525dcac0",
+    "favicon": null
+   },
+   {
+    "domain": "hsbc.com.hk",
+    "page": "5b57b6a2900094d2",
+    "logo": "c0c068642c68c8c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.co.nz",
+    "page": "71cc80c0c8d4d800",
+    "logo": "074d4d49494d4d07",
+    "favicon": null
+   },
+   {
+    "domain": "hsbc.bank.in",
+    "page": "4345092141554180",
+    "logo": "000002026ec9ca6e",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.bm",
+    "page": "01451a2505cc0180",
+    "logo": "0000325656158100",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.co.id",
+    "page": "94c080f1b48081a9",
+    "logo": "c0c5d75652d7c5c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.co.in",
+    "page": "4345092141554180",
+    "logo": "000002026ec9ca6e",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.co.mu",
+    "page": "71e007e0c0c0e8d8",
+    "logo": "074d4d49494d4d07",
+    "favicon": null
+   },
+   {
+    "domain": "hsbc.co.uk",
+    "page": "0b451a2505cc0180",
+    "logo": "8080282529298080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.au",
+    "page": "35c6fff794a08081",
+    "logo": "c0c068642c68c8c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.bd",
+    "page": "131fd6efac94a081",
+    "logo": "c0c5d65652d7c4c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.bh",
+    "page": "304b2b5f2d5d354d",
+    "logo": "e0b2b29292b2b2e0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.cn",
+    "page": "333332368cf68ee4",
+    "logo": "cb0060f4f4603737",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.eg",
+    "page": "550d4b0b158190c0",
+    "logo": null,
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.lk",
+    "page": "71cc80c0c8d0e800",
+    "logo": "074d4d49494d4d07",
+    "favicon": null
+   },
+   {
+    "domain": "hsbc.com.mo",
+    "page": "1132b4c8d696fcb0",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.mt",
+    "page": "83451a2505cc0100",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.mx",
+    "page": "8cca25a088a18894",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.my",
+    "page": "57fc7dc4c080ceb6",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.ph",
+    "page": "57ff3729c0a08090",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.qa",
+    "page": "c32639a0809481b0",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.sg",
+    "page": "860625a8a0008010",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.tw",
+    "page": "323bb253c084c4cc",
+    "logo": "c0c068642c68c8c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.com.vn",
+    "page": "0f4d411111091155",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.fr",
+    "page": "0d15214921235569",
+    "logo": "60e6b69090b6e660",
+    "favicon": null
+   },
+   {
+    "domain": "hsbc.lk",
+    "page": "71cc80c0c8d0e800",
+    "logo": "074d4d49494d4d07",
+    "favicon": null
+   },
+   {
+    "domain": "hsbc.mx",
+    "page": "8cca25a088a18894",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.my",
+    "page": "57fc7dc4c080ceb6",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbc.uk",
+    "page": "0b451a2505cc0180",
+    "logo": "8080282529298080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.co.in",
+    "page": "4345092141554140",
+    "logo": "0000026e6bc94a6e",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.com.my",
+    "page": "57808ec88494c2a8",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.com.ph",
+    "page": "578a80e0ccc4c2b0",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.com.sg",
+    "page": "8e6cfea00088848e",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.com.tw",
+    "page": "323bb253c084c4cc",
+    "logo": "c0c068642c68c8c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.in",
+    "page": "4345092141554140",
+    "logo": "0000026e6bc94a6e",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.my",
+    "page": "57808ec88494c2a8",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvance.ph",
+    "page": "578a80e0ccc4c2b0",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcadvanceusa.com",
+    "page": "c67977a88c88c490",
+    "logo": "0000a6dedea60000",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcamanah.com.my",
+    "page": "57fc7dc4a080ceb6",
+    "logo": "80801a4357188080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcamanah.my",
+    "page": "57fc7dc4a080ceb6",
+    "logo": "80801a4357188080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbccreditcard.com",
+    "page": "c6a0008ae0e0a599",
+    "logo": "0000a6dedea60000",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcinsurance.com.cn",
+    "page": "a207a090acd2ec8a",
+    "logo": "0000d86c71d80103",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbclife.com.sg",
+    "page": "0b27d34c1f07d090",
+    "logo": "0000c0c0d8c00031",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcpremier.com.au",
+    "page": "35c6206484d4a800",
+    "logo": "c0c068642c68c8c0",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcpremier.com.my",
+    "page": "578cd2a400b4a894",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcpremier.com.ph",
+    "page": "578288a801808080",
+    "logo": "80c068646c68c080",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   },
+   {
+    "domain": "hsbcpremierusa.com",
+    "page": "c6b08401886bb89a",
+    "logo": "0000a6dedea60000",
+    "favicon": "e3fbe878da9f2a357e7e3f556d0c3e32b6a7c82f5bb7507f5b0878bad2a4c395"
+   }
+  ],
+  "citiae": [
+   {
+    "domain": "citibank.ae",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   },
+   {
+    "domain": "citibank.co.id",
+    "page": "83d2cecd88c8a08c",
+    "logo": "3c32a59d55755595",
+    "favicon": "18e5ba189113898beea710bbfe7faef7176a9fe9603d767301baba15de180874"
+   },
+   {
+    "domain": "citibank.co.kr",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   },
+   {
+    "domain": "citibank.co.uk",
+    "page": "83908c8788c8a08c",
+    "logo": "3c32a59d55755595",
+    "favicon": "18e5ba189113898beea710bbfe7faef7176a9fe9603d767301baba15de180874"
+   },
+   {
+    "domain": "citibank.com",
+    "page": "485454d8c4baf0cc",
+    "logo": "000018d8d8d80080",
+    "favicon": null
+   },
+   {
+    "domain": "citibank.com.cn",
+    "page": "80808383a3d0acc8",
+    "logo": "3c329ddd55755595",
+    "favicon": null
+   },
+   {
+    "domain": "citibank.com.hk",
+    "page": "b178872b494d4121",
+    "logo": null,
+    "favicon": null
+   },
+   {
+    "domain": "citibank.com.sg",
+    "page": "4123577c8f44a2c4",
+    "logo": "23096262aaca2a6b",
+    "favicon": null
+   },
+   {
+    "domain": "citibank.cz",
+    "page": "152825c8c184f08c",
+    "logo": null,
+    "favicon": null
+   },
+   {
+    "domain": "citibank.hu",
+    "page": "005f33a2c180f08c",
+    "logo": "1c38a59c75559400",
+    "favicon": null
+   },
+   {
+    "domain": "citibank.pl",
+    "page": "c3d6f68aa4f06931",
+    "logo": "8888b4aaaaa92d01",
+    "favicon": null
+   },
+   {
+    "domain": "citibank.sk",
+    "page": "00c0942bc1a2f08c",
+    "logo": "1c38a59c75559400",
+    "favicon": null
+   },
+   {
+    "domain": "citibankonline.pl",
+    "page": null,
+    "logo": null,
+    "favicon": null
+   },
+   {
+    "domain": "citibank.com.tw",
+    "page": "83b2f6c988c8a08c",
+    "logo": "3c32a59d55755595",
+    "favicon": "18e5ba189113898beea710bbfe7faef7176a9fe9603d767301baba15de180874"
+   }
+  ],
+  "eandmoney": [
+   {
+    "domain": "eandmoney.com",
+    "page": "83c8d4f0e8ea88e8",
+    "logo": "786070dd2a74fcea",
+    "favicon": null
+   }
+  ],
+  "payit": [
+   {
+    "domain": "payit.ae",
+    "page": "c3322743070f61e6",
+    "logo": null,
+    "favicon": "5a51b77257b6bf22f0afa345e11eddf45a970cef63404973b0c1db07c4640f19"
+   }
+  ],
+  "virginmobileae": [
+   {
+    "domain": "virginmobile.ae",
+    "page": "3100000000121226",
+    "logo": "c0c8d4d4d4c0d0ea",
+    "favicon": "f4bd60fce9e15107cd6c9d1c9cefb4c5ecc3cdfda1d9090be0006d1b2efbd502"
+   }
+  ],
+  "careem": [
+   {
+    "domain": "careem.com",
+    "page": "737cf00bd2646571",
+    "logo": "7cf084e3d2e22571",
+    "favicon": null
+   }
+  ],
+  "talabat": [
+   {
+    "domain": "talabat.com",
+    "page": "b488b071d2cca0d4",
+    "logo": null,
+    "favicon": null
+   }
+  ],
+  "smsa": [
+   {
+    "domain": "smsaexpress.com",
+    "page": "6508c331313161cc",
+    "logo": "1a9d8ccc8c8e0000",
+    "favicon": "d2218f4625feeb7252f104f5b247cb481d0d2bd7e381ba17eaebd316979153d5"
+   }
+  ],
+  "noon": [],
+  "emiratesair": [],
+  "etihadair": [],
+  "flydubai": [],
+  "airarabia": [
+   {
+    "domain": "airarabia.com",
+    "page": "394b3d170186c48e",
+    "logo": "40d0dbd3d1537300",
+    "favicon": "8399ce107bcd034fb5373ee87ca6b747caca8cd648f2991e6d868389e81f6b87"
+   }
+  ]
+ },
+ "failed": {
+  "du.com": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "adcb.com": "Page.goto: Timeout 15000ms exceeded.",
+  "mashreq.com": "Page.goto: net::ERR_CONNECTION_REFUSED at https://www.mashreq.com/",
+  "mashreqbank.com": "Page.goto: net::ERR_CONNECTION_REFUSED at https://www.mashreqbank.com/",
+  "etihadwe.ae": "page larger than 60 MB",
+  "mofa.gov.ae": "Page.goto: Timeout 15000ms exceeded.",
+  "amer.ae": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.amer.ae/",
+  "moec.gov.ae": "Page.goto: Timeout 15000ms exceeded.",
+  "dc.gov.ae": "Page.goto: Timeout 15000ms exceeded.",
+  "adibcapital.ae": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "emiratesislamic.ae": "Page.goto: Timeout 15000ms exceeded.",
+  "hsbc.am": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbc.ca": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbc.cn": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbc.co.om": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbc.com.ar": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbc.gr": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbcadvance.com.cn": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbcdirect.com": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "hsbcpremier.com.vn": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "citibank.co.th": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "citibank.com.vn": "Domain does not resolve (NXDOMAIN) — site may be down or not yet live.",
+  "citibank.eu": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.citibank.eu/",
+  "noon.com": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.noon.com/",
+  "emirates.com": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.emirates.com/",
+  "etihad.com": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.etihad.com/",
+  "flydubai.com": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.flydubai.com/"
+ },
+ "built_at": "2026-11-20",
+ "shared_logos_dropped": []
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "16936776423",
+    "tbs_sha256": "951c4e5805bb171c4de5cd750404a8984b2899b33a34ed93718e492f9da3b16e",
+    "cert_sha256": "9b139b6f71c85d411e31d3931ebec955f293daa03a9e764b1003eba2d38e08d3",
+    "dns_names": ["dubai2040.ae", "nol.ae", "rta.ae", "rta.gov.ae", "www.dubai2040.ae", "www.nol.ae", "www.rta.ae", "www.rta.gov.ae"],
+    "pubkey_sha256": "0d063ba465cf2eb544ebc6ddb43426dbd60a04b3c44335013eb98fe7f8e4306f",
+    "issuer": {"friendly_name": "DigiCert", "pubkey_sha256": "59e738e674221702af1edb87c5200c1a4b75f64fae3d2c3d265124c61bd83c79", "name": "C=US, O=DigiCert Inc, CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1"},
+    "not_before": "2026-09-02T00:00:00Z",
+    "not_after": "2027-03-19T23:59:59Z",
+    "revoked": false
+  }
+]

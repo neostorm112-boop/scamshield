@@ -1,0 +1,99 @@
+# Golden set for lookalike.match: fakes must hit the given brand with method/position, benign names must not match at all.
+# CT-mode expectations (fake/legit); feed: is the mode="feed" section.
+fake:
+  - {fqdn: e1isalat-pay.com, brand: etisalat, method: homoglyph, position: registrable}
+  - {fqdn: aramex-1f3a9c.ingress-earth.ewp.live, brand: aramex, method: token, position: subdomain}
+  - {fqdn: aramex-8c2d41.ingress-moon.ewp.live, brand: aramex, method: token, position: subdomain}
+  - {fqdn: salik-recharge.top, brand: salik, method: token, position: registrable}
+  - {fqdn: rta-fines.live, brand: rta, method: token, position: registrable}
+  - {fqdn: pay_rta.online, brand: rta, method: token, position: registrable}
+  - {fqdn: salik.pay-now.xyz, brand: salik, method: token, position: subdomain}
+  - {fqdn: dubaipolice-fine.com, brand: dubaipolice, method: token, position: registrable}
+  - {fqdn: "*.etisalat-login.net", brand: etisalat, method: token, position: registrable}
+  - {fqdn: rnashreq-bank.com, brand: mashreq, method: homoglyph, position: registrable}   # rn -> m homoglyph
+  - {fqdn: xn--tisalat-9xa.com, brand: etisalat, method: idn, position: registrable}   # IDNA: "étisalat"
+  - {fqdn: ar4mex-track.com, brand: aramex, method: homoglyph, position: registrable}
+  - {fqdn: etisalat.ae.verify-account.com, brand: etisalat, method: token, position: subdomain}
+  - {fqdn: emiratesnbd-secure.site, brand: enbd, method: token, position: registrable}
+  - {fqdn: d4rb-pay.com, brand: darb, method: homoglyph, position: registrable}
+  - {fqdn: adcb-login.com, brand: adcb, method: token, position: registrable}
+  - {fqdn: du-pay-bill.com, brand: du, method: token, position: registrable}
+  - {fqdn: du-recharge.online, brand: du, method: token, position: registrable}
+  - {fqdn: du-login.xyz, brand: du, method: token, position: registrable}
+  - {fqdn: rta-fines.com, brand: rta, method: token, position: registrable}   # "mydu" does not tokenize to du
+  - {fqdn: uaepass-verify.com, brand: uaepass, method: token, position: registrable}
+  - {fqdn: dewa-bill-pay.com, brand: dewa, method: token, position: registrable}
+  - {fqdn: bankfab-update.com, brand: fab, method: token, position: registrable}
+  - {fqdn: parkin-fine.top, brand: parkin, method: token, position: registrable}
+  - {fqdn: adib-kyc.com, brand: adib, method: token, position: registrable}
+  - {fqdn: rakbank-secure.net, brand: rakbank, method: token, position: registrable}
+  - {fqdn: eandmoney-login.com, brand: eandmoney, method: token, position: registrable}
+  - {fqdn: hsbc-uae-secure.com, brand: hsbcae, method: token, position: registrable}
+  - {fqdn: citibank-ae-login.com, brand: citiae, method: token, position: registrable}
+  - {fqdn: hsbc-dubai.top, brand: hsbcae, method: token, position: registrable}
+  # Real smishing hostnames from public reports (2024-2026), see smishing_golden.yaml for the sources
+  - {fqdn: salik.ae.billb.top, brand: salik, method: token, position: subdomain}
+  - {fqdn: emiratespost.pacnsz.top, brand: emiratespost, method: token, position: subdomain}
+  - {fqdn: emiratespost.ae.tcsz.top, brand: emiratespost, method: token, position: subdomain}
+  - {fqdn: darb-qmobilitya.com, brand: darb, method: token, position: registrable}
+  - {fqdn: parkin-ae.mom, brand: parkin, method: token, position: registrable}
+  - {fqdn: dubaipoit.com, brand: dubaipolice, method: edit-distance, position: registrable}
+  - {fqdn: dubaipoliauey.top, brand: dubaipolice, method: edit-distance, position: registrable}
+
+legit:
+  # short keyword du: no context word / only in a hosting-platform project slot
+  - du.ac.bd
+  - du.xyz
+  - abc.du.r.appspot.com
+  - product-du.pages.dev
+  - du.ac.ae   # TLD ae is not context
+  - digital.mashreqbank.com   # official online bank, proven by cert SAN of www.mashreq.com (harvest_official)
+  - du.shop.ae
+  - du-pay.pages.dev   # slot
+  - rta-fines.pages.dev
+  # machine ids seen in a live CT run: hex token 4dcb must not fold to brand adcb
+  - 5feede6e-3624-4dcb-a08f-e52c2993853c.0.dns-fw.canary.eu-south-2.ops.prod.aura.acm.aws.dev
+  - 7df7ca24-bb51-4dcb-b125-a9f37ad453aa.amdv.canary.af-south-1.ops.prod.aura.acm.aws.dev
+  - 3977b5ce-4dcb-41e9-9a8d-2828d93824b6.4.cname.canary.me-west-1.ops.prod.aura.acm.aws.dev
+  - 4dcb.example.com
+  - 1d3a7ce1-adcb-4dca-84c4-084899387bbb.amdv.canary.eu-west-2.ops.prod.aura.acm.aws.dev   # UUID piece spells adcb literally
+  - 9f2e41aa-e4d0-adcb-9c1e-0b7d55aa0c31.example.net
+  - dubaipolice.gov.ae
+  - www.dubaipolice.gov.ae
+  - carta.com
+  - rta.ae
+  - www.rta.ae
+  - metamask.io
+  - 7b2e5c4a-3a51-4d2d-acde-9bce01f9550a.example
+  - duolingo.com
+  - adcb.com
+  - online.adcb.com
+  - etisalat.ae
+  - mail.etisalat.ae
+  - dubai.com
+  - student.ae
+  - 3f9a1c2b7d4e.cloudfront.net
+  - tammy.com
+  # 2026-11-19 brand batch: short/common words and official domains
+  - fabric-store.com   # fab is a context keyword; "fabric" is another token
+  - fab.design   # no context word
+  - cbd-oil-shop.com
+  - noon-time.com   # noon is a common word
+  - amer.ae
+  - wio.io
+  - dib.ae
+  - moi.gov.ae
+  - hsbc.com   # HSBC group site: listed as an official domain of hsbcae, so never a lookalike
+  - access-hsbc-bm.com        # global brand without UAE context
+  - citibank-login.netlify.app
+
+feed:
+  hit:
+    - {fqdn: rta.dogestocks.com, brand: rta, position: subdomain, context: none}
+    - {fqdn: du.xyz, url_path: /du-recharge/pay, brand: du, position: registrable, context: url_path}
+  miss:
+    - {fqdn: du.ac.bd}
+    - {fqdn: du.xyz}
+    - {fqdn: abc.du.r.appspot.com}
+    - {fqdn: du.xyz, url_path: /index.html}
+    - {fqdn: du.ac.bd, url_path: /du-recharge/pay}   # restricted foreign zone never hits

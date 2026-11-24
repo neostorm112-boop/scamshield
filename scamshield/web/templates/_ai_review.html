@@ -1,0 +1,11 @@
+{#- AI judge of the gray zone: a label from raw facts, never a score, band or decision. Evidence IDs link to the facts above. -#}
+{% set j = case.ai_review %}
+<div class="meta" id="ai-judge">
+  {% if j.review %}{% set r = j.review %}
+  <h3>{{ j.title }}</h3>
+  <p class="muted-line">Brand meant: {{ r.brand_meant }}{% if r.other_target %} · other target: {{ r.other_target }}{% endif %} · confidence {{ r.confidence }} · spent {{ j.cost }}</p>
+  {% for x in r.reasons %}<p class="g-reason"><span class="h">{{ x.text }}</span><span class="m">{% for i in x.evidence_ids %}<a href="#E{{ i }}">E{{ i }}</a>{{ ' ' if not loop.last }}{% endfor %}</span></p>{% endfor %}
+  <p class="muted-line">A suggestion only: risk, band and state do not change because of it, and nothing is hidden.</p>
+  {% else %}<p class="muted-line">{{ j.message }}</p>
+  {% endif %}
+</div>

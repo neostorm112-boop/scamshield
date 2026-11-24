@@ -1,0 +1,2 @@
+https://aramex-1f3a9c.ingress-earth.ewp.live/login
+https://evil.example/path?x=1

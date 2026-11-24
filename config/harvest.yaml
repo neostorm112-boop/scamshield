@@ -1,0 +1,89 @@
+# Third-party hosts that official sites link to or share certificates with; harvest_official never proposes them.
+# A host is excluded when it equals an entry or is a subdomain of it.
+third_party:
+  # CDN / certificate and hosting infrastructure
+  - cloudflare.com
+  - cloudflaressl.com
+  - cloudflare.net
+  - akamai.net
+  - akamaiedge.net
+  - akamaized.net
+  - edgekey.net
+  - edgesuite.net
+  - fastly.net
+  - cloudfront.net
+  - amazonaws.com
+  - azureedge.net
+  - azurewebsites.net
+  - googleapis.com
+  - gstatic.com
+  - googleusercontent.com
+  - incapsula.com
+  - imperva.com
+  - sucuri.net
+  - digicert.com
+  - sectigo.com
+  - letsencrypt.org
+  - godaddy.com
+  - bootstrapcdn.com
+  - jsdelivr.net
+  - cdnjs.com
+  - jquery.com
+  # analytics / tag managers / chat / consent
+  - google.com
+  - google-analytics.com
+  - googletagmanager.com
+  - doubleclick.net
+  - facebook.net
+  - hotjar.com
+  - clarity.ms
+  - adobe.com
+  - omtrdc.net
+  - onetrust.com
+  - cookielaw.org
+  - trustarc.com
+  - salesforce.com
+  - sitecore.net
+  - zendesk.com
+  - livechatinc.com
+  - tawk.to
+  - w3.org
+  - schema.org
+  # social
+  - facebook.com
+  - instagram.com
+  - twitter.com
+  - x.com
+  - linkedin.com
+  - youtube.com
+  - youtu.be
+  - tiktok.com
+  - snapchat.com
+  - whatsapp.com
+  - wa.me
+  - t.me
+  - telegram.me
+  - pinterest.com
+  - threads.net
+  - medium.com
+  # app stores
+  - apple.com
+  - apps.apple.com
+  - play.google.com
+  - appgallery.huawei.com
+  - huawei.com
+  - samsung.com
+  # payment gateways / card networks
+  - visa.com
+  - mastercard.com
+  - paypal.com
+  - stripe.com
+  - checkout.com
+  - telr.com
+  - network.ae
+  - payfort.com
+  - amazonpay.com
+  - applepay.com
+  # generic reference sites
+  - wikipedia.org
+  - gov.ae

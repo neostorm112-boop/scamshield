@@ -1,0 +1,61 @@
+{#- The whole case (verdict, picture, reasons, AI, decide, Details). Polled every 2 s while the check runs (hx-swap outerHTML); a finished check makes the route answer with HX-Redirect. -#}
+{% set c = case.c %}{% set d = case.domain %}
+<div class="case-body" id="case-body"{% if case.check.poll %} hx-get="/d/{{ fqdn }}/partials/facts{{ '?from=' ~ from_ if from_ }}" hx-trigger="every 2s" hx-swap="outerHTML"{% endif %}>
+  <div class="verdict">
+    <div class="risk {{ 'high' if d.state == 'REVIEW_HIGH' and c.tone == 'high' else 'nodata' if c.risk is none or c.tone in ('nodata', 'decided') }}" title="Risk 0–100"{% if c.risk is not none %} role="img" aria-label="Risk {{ c.risk }} of 100"{% endif %}>{{ c.risk if c.risk is not none else ('…' if d.state is none and not c.failed else '–') }}</div>
+    <div class="vtext">
+      <h1 id="v-h" tabindex="-1">{{ c.headline }}</h1>
+      <div class="fq">{{ fqdn|wbr_dots }}</div>
+      {% if c.chip %}<span class="chip {{ c.chip.cls }}"><span aria-hidden="true">{{ c.chip.glyph }}</span>{{ c.chip.text }}</span>{% endif %}
+      {% if c.prefix %}<div class="sub">{{ c.prefix }}</div>{% endif %}
+      {% if case.check.text %}<div class="sub">{{ case.check.text }}</div>{% endif %}
+    </div>
+  </div>
+  {% if case.timeline %}<ol class="timeline" aria-label="How fresh this find is">{% for t in case.timeline %}<li{% if t.lead %} class="lead"{% endif %}><b>{{ t.label }}</b> {{ t.text }}</li>{% endfor %}</ol>{% endif %}
+  <div class="grid">
+    {% if case.snap.id %}<figure class="shot"><a href="/evidence/{{ case.snap.id }}" target="_blank" rel="noopener" title="Open full size"><img src="/evidence/{{ case.snap.id }}" alt="Screenshot of {{ fqdn }}, taken in a sandboxed browser"><span class="shot-more">Open full size</span></a></figure>
+    {% elif d.state is not none %}<div class="shot empty"><span>{{ case.snap.message or 'No picture yet' }}</span>
+      <form method="post" action="/d/{{ fqdn }}/snapshot" onsubmit="this.querySelector('button').disabled = true; this.previousElementSibling.textContent = 'Taking snapshot… (up to 25 s)'"><button class="btn" type="submit">{{ 'Try again' if case.snap.message else 'Take snapshot' }}</button></form></div>
+    {% else %}<div class="shot empty"><span>No picture yet</span></div>{% endif %}
+    <div>
+      {% if c.reasons %}<ul class="reasons">{% for r in c.reasons %}<li>{{ r.reason or r.text }}</li>{% endfor %}</ul>
+      {% else %}<ul class="reasons none"><li>{{ 'No facts yet.' if d.state is none else 'No strong facts found.' }}</li></ul>{% endif %}
+      {% if case.explanation %}{% include "_explanation.html" %}{% endif %}
+      {% if not case.check.poll %}{% include "_decide.html" %}{% endif %}
+      <details class="more" id="details"><summary>Details</summary>
+        <div class="dl">
+          <div class="meta">
+            <div>{{ c.sentence }}{% if c.other_brand %} Another brand name is in the address too.{% endif %}</div>
+            <div>Risk 0–100{% if c.risk is not none %}: <b>{{ c.risk }}</b>{% endif %}{% if c.checks is not none %} · Checks {{ c.checks }}/5{% endif %}{% if c.not_checked and d.state is not none %} · not checked: {{ c.not_checked|join(', ') }}{% endif %}</div>
+            <div>{% if case.assessment %}Assessed <time>{{ case.assessment.at|gst }}</time> · {% endif %}<span class="mode{{ ' demo' if d.data_mode == 'DEMO' }}">{{ d.data_mode }}</span> · found via {{ {'ct_tiled': 'cert log', 'feeds': 'phishing list', 'manual': 'a pasted link', 'baseline': 'baseline list', 'relatives': 'a relative of another case'}.get(d.found_by, d.found_by) }}</div>
+            {% if case.assessment and c.breakdown %}<div title="How the risk number is built">Points: {{ c.breakdown|join(' · ') }}{% if c.points_total %} {{ c.points_total }}{% endif %}</div>{% endif %}
+            {% if case.snap.id %}<div>Screenshot captured <time>{{ case.snap.at|gst }}</time></div>{% endif %}
+          </div>
+          {% if case.ai_review %}{% include "_ai_review.html" %}{% endif %}
+          <div class="meta" id="ai-claims">{% include "_ai_claims.html" %}</div>
+          {% if c.evidence_count %}<div class="evidence" id="all-evidence">
+            {% for g in c.groups %}<div class="ev-group"><h3>{{ g.name }}</h3>
+              {% for f in g.rows %}<div class="ev{{ ' nc' if f.nc }}" id="E{{ f.id }}"><span class="v">{% if f.nc %}<span class="ico">⊘</span>{% endif %}{{ f.text }}</span><span class="r">{{ f.src }} · {{ f.at|gst }} <span class="mode">{{ f.mode }}</span><span class="id">E{{ f.id }}</span></span></div>{% endfor %}
+            </div>{% endfor %}
+          </div>{% endif %}
+          <div>
+            {% if case.edges %}
+            <div class="step-h"><h3 id="l-h">Links — {{ c.links_clause }}</h3><button class="ghost right" type="button" id="graph-expand">Expand ⤢</button></div>
+            <div class="graph" id="graph-inline"></div>
+            {% for e in case.link_reasons %}<p class="g-reason"><span class="h"><span class="gly" aria-hidden="true">▣</span><b>{{ e.sentence }}</b> · {{ e.level }} link</span><span class="m">{% for ev in e.evidence %}<a href="#E{{ ev.id }}">{{ ev.source }} · <time>{{ ev.fetched_at|gst }}</time></a> <span class="eids">E{{ ev.id }}</span>{{ ' ' if not loop.last }}{% endfor %}</span></p>{% endfor %}
+            <script type="application/json" id="graph-data">{{ {"center": fqdn, "edges": case.edges, "tones": case.tones}|tojson }}</script>
+            {% else %}<p class="muted-line">{{ 'Links appear when the check finishes.' if case.check.poll else 'No links found. Shared CDN and hosting platforms are not counted as links.' }}</p>{% endif %}
+          </div>
+          <div class="tools">
+            {% if d.state is not none and d.state != 'OFFICIAL' %}<form method="post" action="/d/{{ fqdn }}/relatives" onsubmit="this.querySelector('button').disabled = true; this.querySelector('.rel-msg').textContent = 'Searching urlscan… (up to 3 searches)'">
+              <button class="btn" type="submit" title="Search urlscan for sites with the same script file, data panel or rare IP. Found sites are only queued for a check.">Find relatives</button>
+              <span class="rel-msg">{% if case.relatives %}{{ case.relatives.message }} · <time>{{ case.relatives.at|gst }}</time>{% else %}Same script, panel or IP in urlscan — never the same logo{% endif %}</span></form>{% endif %}
+            {% if d.state is not none and d.state != 'OFFICIAL' and not (case.feedback and case.feedback.verdict == 'legit') %}<a class="btn" href="/d/{{ fqdn }}/takedown">Takedown draft</a>{% endif %}
+            {% if case.snap.id %}<form method="post" action="/d/{{ fqdn }}/snapshot" onsubmit="this.querySelector('button').disabled = true; this.querySelector('button').textContent = 'Taking snapshot… (up to 25 s)'"><button class="btn" type="submit">New screenshot</button></form>{% endif %}
+            <form method="post" action="/check"><input type="hidden" name="url" value="{{ fqdn }}"><button class="btn" type="submit">Check again</button></form>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>

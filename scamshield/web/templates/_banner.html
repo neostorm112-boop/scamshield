@@ -1,0 +1,8 @@
+{#- The one status dot of the header. Details (live banner text, every source) are in the title; times are GST. -#}
+{% set bad = sources|selectattr('state', 'in', ['amber', 'red'])|list %}
+{% set offline = h.banner and h.banner.state == 'red' %}
+{% set tone = 'down' if offline or bad|selectattr('state', 'equalto', 'red')|list else 'warn' if bad or ai_paused or (h.banner and h.banner.state == 'amber') else 'ok' %}
+{% set tip = [] %}{% if h.banner %}{% set _ = tip.append(h.banner.text) %}{% endif %}{% if ai_paused %}{% set _ = tip.append(ai_paused) %}{% endif %}{% for s in sources %}{% set _ = tip.append(s.name ~ ': ' ~ s.status) %}{% endfor %}
+{% set line = 'Live' ~ (' · ' ~ bad|length ~ ' source' ~ ('s' if bad|length > 1) ~ ' with problems' if bad) ~ (' · ' ~ ai_paused if ai_paused) %}
+<span class="st" title="{{ tip|join('\n') }}" role="status" aria-label="{{ h.banner.text if offline else line if bad or ai_paused else 'Live · all sources working' }}"><span class="dot {{ tone if tone != 'ok' }}" aria-hidden="true"></span>{% if offline %}<span>{{ h.banner.text }}</span>{% elif bad or ai_paused %}<span>{{ line.split(': ', 1)[0] }}{% if ': ' in line %}<span class="long">: {{ line.split(': ', 1)[1] }}</span>{% endif %}</span>{% else %}<span>Live<span class="long"> · all sources working</span></span>{% endif %}</span>
+<span id="live-counts" hx-swap-oob="true" title="Certificate logs we read since start; finds by us; domains that only echo a phishing list">{{ '{:,}'.format(h.counters.certs_checked).replace(',', ' ') }} certificates checked{% if h.last_entry_s is not none %} · last entry {{ h.last_entry_s }} s ago{% endif %} · finds by us: {{ h.counters.finds }} · list echoes: {{ h.counters.list_echoes }}</span>

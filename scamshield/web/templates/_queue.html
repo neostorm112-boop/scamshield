@@ -1,0 +1,11 @@
+{#- Queue rows of the open view (v). The 5 s poll swaps the inside of <ul>, so the scroll position and the open case stay put. -#}
+{% macro qs() -%}
+{%- set p = [] -%}{%- if v.key != 'todo' %}{% set _ = p.append(v.key ~ '=1') %}{% endif -%}{%- if v.shown > v.page %}{% set _ = p.append('rows=' ~ v.shown) %}{% endif -%}
+{{- ('?' ~ p|join('&')) if p -}}
+{%- endmacro %}
+{% macro item(d) -%}
+<li{% if d.new %} class="new"{% endif %}><a class="row{% if d.tier == 5 %} done{% endif %}" href="/d/{{ d.fqdn }}{{ qs() }}"{% if d.fqdn == open %} aria-current="true"{% endif %}><span class="badge {{ 'hi' if d.badge == 'high' else d.badge }}" role="img" aria-label="{{ d.label }}">{{ d.glyph }}</span><span><span class="d">{{ d.fqdn|wbr_dots }}</span><span class="b">{{ d.brand if d.tier == 1 and d.brand else d.why }}{% if d.tag %} · {{ d.tag }}{% endif %}{% if d.data_mode == 'DEMO' %} · DEMO{% endif %}</span></span></a></li>
+{%- endmacro %}
+{% for d in v.rows %}{{ item(d) }}{% else %}<li class="q-empty">{{ 'Nothing to check right now.' if v.key == 'todo' else 'Nothing here.' }}</li>{% endfor %}
+{% if v.more %}<li class="q-empty q-more"><a href="?{{ (v.key ~ '=1&') if v.key != 'todo' }}rows={{ v.next_rows }}">Show {{ v.more }} more</a> · {{ v.shown }} of {{ v.listed }} shown</li>{% endif %}
+{% if oob %}<span id="q-count" hx-swap-oob="true">{{ v.count }}</span>{% endif %}

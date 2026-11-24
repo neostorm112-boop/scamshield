@@ -1,0 +1,21 @@
+domain,expected,synthetic,proof
+rta.ae,OFFICIAL,0,config/brands.yaml rta
+salik.ae,OFFICIAL,0,config/brands.yaml salik
+adpolice.gov.ae,OFFICIAL,0,config/brands.yaml adpolice
+dubaipolice.gov.ae,OFFICIAL,0,config/brands.yaml dubaipolice
+emiratespost.ae,OFFICIAL,0,config/brands.yaml emiratespost
+aramex.com,OFFICIAL,0,config/brands.yaml aramex
+du.ae,OFFICIAL,0,config/brands.yaml du
+adcb.com,OFFICIAL,0,config/brands.yaml adcb
+emiratesnbd.com,OFFICIAL,0,config/brands.yaml enbd
+mashreq.com,OFFICIAL,0,config/brands.yaml mashreq
+arcmex-bus.com,FAKE,0,Phishing.Database list saved 2026-11-19 (listed)
+adcb-abudhabi.com,FAKE,0,Phishing.Database list saved 2026-11-19 (listed)
+etinalat.rest,FAKE,0,Phishing.Database list saved 2026-11-19 (listed)
+etisalatebills.com,FAKE,0,Phishing.Database list saved 2026-11-19 (listed)
+aramex-b09d96.ingress-bonde.ewp.live,FAKE,0,Phishing.Database list saved 2026-11-19 (listed); Aramex ewp.live cluster in FEASIBILITY.md
+aramex-parcel-hold-7731.com,FAKE,1,SYNTHETIC invented name; in no feed
+etisalat-bill-refund-5520.net,FAKE,1,SYNTHETIC invented name; in no feed
+emiratesnbd-secure-verify-9082.com,FAKE,1,SYNTHETIC invented name; in no feed
+dubaipolice-fine-pay-4417.com,FAKE,1,SYNTHETIC invented name; in no feed
+salik-recharge-now-6683.com,FAKE,1,SYNTHETIC invented name; in no feed

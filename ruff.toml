@@ -1,0 +1,12 @@
+line-length = 120
+target-version = "py312"
+# Mockup generators in docs/design are design artefacts, not product code
+extend-exclude = ["docs/design"]
+
+[lint]
+# pyflakes, pycodestyle, isort, pyupgrade, bugbear, simplify, ruff-specific
+extend-select = ["F", "E", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501", "E731", "RUF001", "SIM105"]  # long lines: ruff format; lambdas in tables; homoglyph tables are data; explicit try/except kept
+
+[format]
+quote-style = "double"

@@ -1,0 +1,10 @@
+fastapi==0.165.0
+uvicorn==0.54.0
+jinja2==3.1.6
+pyyaml==6.0.3
+httpx==0.28.1
+dnspython==2.9.2
+tldextract==5.4.0
+cryptography==50.0.2
+playwright==1.56.0  # matches the Chromium 1194 build in the Playwright cache; ADR 0004
+anthropic==2.12.0  # official Anthropic client: typed errors, retries, timeouts (stage 9 AI explanation)

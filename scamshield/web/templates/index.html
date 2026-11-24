@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}{% if fqdn %}{{ fqdn }} - {% endif %}ScamShield{% endblock %}
+{% macro tab(t) -%}
+<a class="toggle"{{ ' style="color:var(--text)" aria-current="page"'|safe if t.key == v.key }} href="{{ ('/d/' ~ fqdn) if fqdn else '/' }}{{ ('?' ~ t.key ~ '=1') if t.key != 'todo' }}">{{ t.label }} ({{ t.n }})</a>
+{%- endmacro %}
+{% block content %}
+{%- set qstr = ('?' ~ v.key ~ '=1') if v.key != 'todo' else '' -%}
+<a class="skip" href="#case">Skip to case</a>
+<header class="top">
+  <a class="logo" href="/" title="Times in GST (UTC+4) · data stays on this laptop">ScamShield</a>
+  <form class="check" role="search" action="/check" method="post">
+    <label class="sr-only" for="url">Paste a link to check</label>
+    <input id="url" name="url" type="text" placeholder="Paste a link to check" autocomplete="off" required><button type="submit">Check</button>
+  </form>
+  {% if error %}<p class="err" role="alert">{{ error }}</p>{% endif %}
+  <div class="status" id="live-banner" hx-get="/partials/banner" hx-trigger="load, every 10s"></div>
+</header>
+<div class="main {{ 'view-case' if fqdn else 'view-queue' }}">
+<nav class="queue" aria-label="What to check next">
+  <div class="qhead"><b id="q-count">{{ v.count }}</b> {{ v.noun }}<p class="q-hint">{{ v.hint }}</p></div>
+  <div class="q-foot q-tools">
+    <div class="row2">{% for t in v.tabs %}{{ tab(t) }}{% endfor %}</div>
+    <form class="row2" action="/search/run" method="post"><button class="linkbtn" type="submit" title="Runs the fixed brand searches">Web search</button>{% if ws_last %}<span title="Last web search">last run {{ ws_last|gst }}</span>{% endif %}</form>
+  </div>
+  <ul class="q-list" id="rows" hx-get="/partials/feed-rows" hx-trigger="every 5s" hx-swap="innerHTML" hx-vals='{{ {"since": since, "d": open or "", "from": from_ or "", v.key: 1, "rows": v.shown}|tojson }}'>
+    {% include "_queue.html" %}
+  </ul>
+  <div class="q-foot">
+    <span title="Latest answer from the cert-log / list monitors">{% if monitor %}Monitor <span class="mono">{{ monitor|gst }}</span>{% else %}Monitor not started{% endif %}</span>
+    <span id="live-counts"></span>
+  </div>
+</nav>
+<main class="case" id="case">
+{% if case %}
+  <div class="wrap">
+    <a class="back" href="/{{ qstr }}">← All {{ v.count }} {{ v.noun }}</a>
+    {% with fqdn=case.fqdn %}{% include "_case_body.html" %}{% endwith %}
+  </div>
+{% elif missing %}
+  <div class="empty"><div class="empty-box"><a class="back" href="/">← All {{ q.count }} to check</a><div class="empty-ico" aria-hidden="true">?</div><h2>Investigation not found</h2><p>{{ fqdn }} is not in our database. Paste it in the box above to check it.</p></div></div>
+{% else %}
+  <div class="empty"><div class="empty-box"><div class="empty-ico" aria-hidden="true">✓</div><h2>Nothing to check right now.</h2><p>{% if monitor %}Monitor is running (last answer {{ monitor|gst }}).{% else %}Monitor has not answered yet.{% endif %}</p>{% if baseline_n and v.key != 'baseline' %}<p>{{ baseline_n }} domains were loaded as baseline when the monitor started (use <a href="/?baseline=1">Baseline</a> above the list).</p>{% endif %}<p>Paste a link in the box above.</p></div></div>
+{% endif %}
+</main>
+</div>
+{% if case and case.edges %}
+<div id="graph-overlay" hidden>
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="overlay" role="dialog" aria-modal="true" aria-labelledby="ov-h">
+    <div class="ov-head"><h2 id="ov-h">Links around <span class="fqdn">{{ case.fqdn }}</span></h2><span class="sub">{{ case.c.node_count }} linked site{{ 's' if case.c.node_count != 1 }} · click a site to open it</span><button class="ov-close" type="button" id="graph-close" aria-label="Close (Esc)">✕</button></div>
+    <div class="ov-canvas"><div id="graph-big"></div>
+      <div class="zoom"><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-out" aria-label="Zoom out">−</button><button class="fit" type="button" id="zoom-fit">Fit</button></div>
+      <div class="legend"><b>Legend</b><span class="lg"><span class="sw focus"></span>this site</span><span class="lg"><span class="sw high"></span>review</span><span class="lg"><span class="sw nodata"></span>not enough checks</span></div>
+    </div>
+    <div class="ov-foot" id="graph-note">Click a line to read why the two sites are linked.</div>
+  </div>
+</div>
+<script src="/static/cytoscape.min.js"></script>
+{% endif %}
+<script src="/static/app.js"></script>
+{% endblock %}

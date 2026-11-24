@@ -1,0 +1,28 @@
+{% set d = case.domain %}{% set fb = case.feedback %}
+{% set decided = fb and fb.verdict in ('scam', 'legit') %}
+{% if d.state == 'NOISE' and not fb %}
+  <div class="decide"><div class="decide-line"><span><b>Filtered out:</b> {{ case.assessment.components.reason }}.</span>
+    <form method="post" action="/d/{{ fqdn }}/restore"><button class="btn" type="submit">Return to queue</button></form></div></div>
+{% elif d.state == 'OFFICIAL' or (decided and not change) %}
+  <div class="decide"><div class="decide-line">
+    {% if decided %}<span><b>{{ 'Confirmed scam (analyst)' if fb.verdict == 'scam' else 'Legit (analyst)' }}</b> — {{ fb.reason }} · <time>{{ fb.created_at|gst }}</time></span>
+    <a href="/d/{{ fqdn }}?change=1">Change decision</a>
+    {% else %}<span><b>Official domain — nothing to decide.</b></span><a href="/d/{{ fqdn }}?change=1">Disagree? Give a decision ▸</a>{% endif %}
+    <a class="btn btn-primary" href="{{ '/d/' ~ next if next else '/' }}">Open next case</a></div>
+    {% include "_decide_next.html" %}
+  </div>
+{% else %}
+  <form class="decide" id="decide" aria-labelledby="d-h" method="post" action="/d/{{ fqdn }}/feedback">
+    <h2 class="sr-only" id="d-h">Decide</h2>
+    <div class="choices" role="radiogroup" aria-labelledby="d-h"><button class="choice scam" type="button" role="radio" aria-checked="false" tabindex="0" data-v="scam">Scam</button><button class="choice" type="button" role="radio" aria-checked="false" tabindex="-1" data-v="legit">Legit</button><button class="choice" type="button" role="radio" aria-checked="false" tabindex="-1" data-v="unclear">Unclear</button></div>
+    {% if fb %}<p class="d-next">Last decision: {{ fb.verdict|capitalize }} — {{ fb.reason }}</p>{% endif %}
+    <div class="reason">
+      <label class="sr-only" for="reason">Why (required)</label>
+      <input id="reason" name="reason" type="text" required autocomplete="off" placeholder="Why? e.g. copies the tracking page">
+      <button class="save" type="submit" disabled title="Choose Scam, Legit or Unclear and write a reason first">Save · next</button>
+    </div>
+    {% include "_decide_next.html" %}
+    <input type="hidden" name="verdict" value="">
+    {% if next %}<input type="hidden" name="next" value="{{ next }}">{% endif %}
+  </form>
+{% endif %}

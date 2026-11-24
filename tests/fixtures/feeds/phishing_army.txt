@@ -1,0 +1,5 @@
+# phishing.army test list
+
+rta-fines.live
+other.bad
+plain.xyz

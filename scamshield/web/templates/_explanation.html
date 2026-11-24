@@ -1,0 +1,11 @@
+{#- AI block: a pointer to the facts, never a score. Written automatically, no button; the cited claims live in Details (#ai-claims, swapped with this block). -#}
+{% set x = case.explanation %}
+<div class="ai" id="ai-explanation"{% if x.writing and not case.check.poll %} hx-get="/d/{{ fqdn }}/partials/explanation" hx-trigger="every 3s" hx-swap="outerHTML"{% endif %}>
+  <div class="who">AI</div>
+  {% if x.explanation %}{% set e = x.explanation %}
+  <p id="ai-text">{{ e.summary|strip_eids }}{% if e.cannot_determine %} The evidence is not enough to decide.{% endif %}</p><button class="all" type="button" aria-expanded="false" aria-controls="ai-text" hidden>Read all</button>
+  {% elif x.writing %}<div class="writing" role="status">AI is writing…</div><div class="sk" style="width:92%"></div><div class="sk" style="width:80%"></div><div class="sk" style="width:60%"></div>
+  {% else %}<p class="muted">{{ x.message }}</p>
+  {% endif %}
+</div>
+{% if oob and x.explanation %}<div id="ai-claims" class="meta" hx-swap-oob="true">{% include "_ai_claims.html" %}</div>{% endif %}

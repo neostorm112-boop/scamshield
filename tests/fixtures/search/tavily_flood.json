@@ -1,0 +1,269 @@
+{
+"query": "pay RTA fine",
+"results": [
+{
+"url": "https://tavily.com/page",
+"title": "tavily.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://gulfnews.com/page",
+"title": "gulfnews.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://facebook.com/page",
+"title": "facebook.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://youtube.com/page",
+"title": "youtube.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://reddit.com/page",
+"title": "reddit.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://fedex.com/page",
+"title": "fedex.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://scribd.com/page",
+"title": "scribd.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://u.ae/page",
+"title": "u.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.dubai.ae/page",
+"title": "www.dubai.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.adjd.gov.ae/page",
+"title": "www.adjd.gov.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://dgov.tdra.gov.ae/page",
+"title": "dgov.tdra.gov.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://apps.apple.com/page",
+"title": "apps.apple.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://parcelsapp.com/page",
+"title": "parcelsapp.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.rta.ae/page",
+"title": "www.rta.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://khaleejtimes.com/page",
+"title": "khaleejtimes.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.instagram.com/page",
+"title": "www.instagram.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://x.com/page",
+"title": "x.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.linkedin.com/page",
+"title": "www.linkedin.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.dhl.com/page",
+"title": "www.dhl.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.aramex.com/page",
+"title": "www.aramex.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://play.google.com/page",
+"title": "play.google.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://en.wikipedia.org/page",
+"title": "en.wikipedia.org",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.tiktok.com/page",
+"title": "www.tiktok.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.quora.com/page",
+"title": "www.quora.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://medium.com/page",
+"title": "medium.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.thenationalnews.com/page",
+"title": "www.thenationalnews.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.trustpilot.com/page",
+"title": "www.trustpilot.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.ups.com/page",
+"title": "www.ups.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://17track.net/page",
+"title": "17track.net",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.google.com/page",
+"title": "www.google.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.bbc.com/page",
+"title": "bbc",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.moi.gov.ae/page",
+"title": "www.moi.gov.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.dm.gov.ae/page",
+"title": "www.dm.gov.ae",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://smartservices.ae.example.org/page",
+"title": "smartservices.ae.example.org",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://news.example.net/page",
+"title": "news.example.net",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://blog.example.org/page",
+"title": "blog.example.org",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://forum.example.com/page",
+"title": "forum.example.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://www.example.com/page",
+"title": "www.example.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://help.example.io/page",
+"title": "help.example.io",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://docs.example.dev/page",
+"title": "docs.example.dev",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://wiki.example.org/page",
+"title": "wiki.example.org",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://evgfinescheck.com/page",
+"title": "evgfinescheck.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://salik-fine-pay.com/page",
+"title": "salik-fine-pay.com",
+"content": "x",
+"score": 0.5
+},
+{
+"url": "https://rta-fines.top/page",
+"title": "rta-fines.top",
+"content": "x",
+"score": 0.5
+}
+]
+}

@@ -1,0 +1,66 @@
+# 11 worked scoring examples. Facts are fixed here; test_scoring asserts B, R, band and reason.
+# Check status shorthand: feeds = phishing lists naming the domain; resolves; age_days / cert_age_days null = unknown.
+# Example 4 follows the project decision: phishing against a non-UAE brand stays in the queue (GRAY, "Other brand").
+- n: 1
+  fqdn: du.ac.bd
+  note: sieve drops it in both modes; scoring is fed the fact as if it was re-admitted
+  lookalike: {brand: du, keyword: du, label: du, score: 1.0, method: token, position: registrable, restricted_zone: true, context: none, context_words: [], mode: feed}
+  feeds: [phishing_database]
+  resolves: true
+  expect: {B: -1.5, R: 2.5, band: NOISE, state: NOISE, reason: registrable label}
+- n: 2
+  fqdn: rta.dogestocks.com
+  lookalike: {brand: rta, keyword: rta, label: rta, score: 1.0, method: token, position: subdomain, restricted_zone: false, context: none, context_words: [], mode: feed}
+  feeds: [phishing_database]
+  resolves: true
+  expect: {B: 0.5, R: 2.5, band: GRAY, state: REVIEW}
+- n: 3
+  fqdn: arcmex-bus.com
+  lookalike: {brand: aramex, keyword: aramex, label: arcmex, score: 0.8, method: edit-distance, position: registrable, restricted_zone: false, context: none, context_words: [], mode: feed}
+  feeds: [phishing_database]
+  resolves: true
+  expect: {B: 1.5, R: 2.5, band: GRAY, state: REVIEW}
+- n: 4
+  fqdn: meta-framex-24f.pages.dev
+  lookalike: {brand: aramex, keyword: aramex, label: framex, score: 0.8, method: edit-distance, position: platform_label, restricted_zone: false, context: none, context_words: [], mode: feed}
+  feeds: [phishing_database]
+  resolves: true
+  expect: {B: -0.5, R: 2.5, band: GRAY, state: REVIEW, flags: [OTHER_BRAND]}
+- n: 5
+  fqdn: salik-recharge.top
+  lookalike: {brand: salik, keyword: salik, label: salik, score: 1.0, method: token, position: registrable, restricted_zone: false, context: name, context_words: [recharge], mode: feed}
+  feeds: [openphish]
+  resolves: true
+  age_days: 5
+  expect: {B: 4, R: 5.5, band: FURTHER, state: REVIEW_HIGH}
+- n: 6
+  fqdn: rta-fines.live
+  lookalike: {brand: rta, keyword: rta, label: rta, score: 1.0, method: token, position: registrable, restricted_zone: false, context: name, context_words: [fines], mode: feed}
+  feeds: [openphish]
+  resolves: true
+  age_days: 5
+  expect: {B: 2.5, R: 5.5, band: FURTHER, state: REVIEW_HIGH}
+- n: 7
+  fqdn: aramax-track.com
+  lookalike: {brand: aramex, keyword: aramex, label: aramax, score: 0.8, method: edit-distance, position: registrable, restricted_zone: false, context: none, context_words: [], mode: ct}
+  cert_age_days: 0
+  expect: {B: 1.5, R: 1, band: GRAY_LOW, state: REVIEW, flags: [GRAY_LOW]}
+- n: 8
+  fqdn: etisalat-verify.someuni.edu.pk
+  lookalike: {brand: etisalat, keyword: etisalat, label: etisalat, score: 1.0, method: token, position: subdomain, restricted_zone: true, context: name, context_words: [verify], mode: feed}
+  feeds: [phishing_database]
+  resolves: true
+  expect: {B: 3, R: 3.5, band: GRAY, state: REVIEW, flags: [COMPROMISED_HOST]}
+- n: 9
+  fqdn: du.xyz
+  note: domain-only feed; dropped by the sieve in both modes (sieve test)
+  sieve_drops: true
+- n: 10
+  fqdn: arcmex-old.com
+  lookalike: {brand: aramex, keyword: aramex, label: arcmex, score: 0.8, method: edit-distance, position: registrable, restricted_zone: false, context: none, context_words: [], mode: ct}
+  age_days: 3285
+  expect: {B: 1.5, R: -1.5, band: NOISE, state: NOISE, reason: old established domain}
+- n: 11
+  fqdn: e1isalat-pay.com
+  lookalike: {brand: etisalat, keyword: etisalat, label: elisalat, score: 0.8, method: homoglyph, position: registrable, restricted_zone: false, context: name, context_words: [pay], mode: ct}
+  expect: {B: 6, R: 0, band: GRAY, state: REVIEW, flags: ["GUARD:G1"]}

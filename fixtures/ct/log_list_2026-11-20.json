@@ -1,0 +1,222 @@
+{
+ "operators": [
+  {
+   "name": "Google",
+   "tiled_logs": [
+    {
+     "description": "Google ParcelYard2026h2",
+     "monitoring_url": "https://storage.googleapis.com/parcelyard2026h2.prod.certificate.transparency.goog/",
+     "state": {
+      "usable": {
+       "timestamp": "2026-08-31T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2026-07-01T00:00:00Z",
+      "end_exclusive": "2027-01-01T00:00:00Z"
+     }
+    },
+    {
+     "description": "Google ParcelYard2027h1",
+     "monitoring_url": "https://storage.googleapis.com/parcelyard2027h1.prod.certificate.transparency.goog/",
+     "state": {
+      "usable": {
+       "timestamp": "2026-08-31T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-01-01T00:00:00Z",
+      "end_exclusive": "2027-07-01T00:00:00Z"
+     }
+    },
+    {
+     "description": "Google ParcelYard2027h2",
+     "monitoring_url": "https://storage.googleapis.com/parcelyard2027h2.prod.certificate.transparency.goog/",
+     "state": {
+      "usable": {
+       "timestamp": "2026-08-31T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-07-01T00:00:00Z",
+      "end_exclusive": "2028-01-01T00:00:00Z"
+     }
+    },
+    {
+     "description": "Google PlumbersArms2026h2",
+     "monitoring_url": "https://storage.googleapis.com/plumbersarms2026h2.prod.certificate.transparency.goog/",
+     "state": {
+      "usable": {
+       "timestamp": "2026-08-31T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2026-07-01T00:00:00Z",
+      "end_exclusive": "2027-01-01T00:00:00Z"
+     }
+    },
+    {
+     "description": "Google PlumbersArms2027h1",
+     "monitoring_url": "https://storage.googleapis.com/plumbersarms2027h1.prod.certificate.transparency.goog/",
+     "state": {
+      "usable": {
+       "timestamp": "2026-08-31T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-01-01T00:00:00Z",
+      "end_exclusive": "2027-07-01T00:00:00Z"
+     }
+    },
+    {
+     "description": "Google PlumbersArms2027h2",
+     "monitoring_url": "https://storage.googleapis.com/plumbersarms2027h2.prod.certificate.transparency.goog/",
+     "state": {
+      "usable": {
+       "timestamp": "2026-08-31T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-07-01T00:00:00Z",
+      "end_exclusive": "2028-01-01T00:00:00Z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "Let's Encrypt",
+   "tiled_logs": [
+    {
+     "description": "Let's Encrypt Sycamore2026h2",
+     "monitoring_url": "https://mon.sycamore.ct.letsencrypt.org/2026h2/",
+     "state": {
+      "usable": {
+       "timestamp": "2025-11-27T03:00:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2026-06-18T00:00:00Z",
+      "end_exclusive": "2026-12-17T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Sycamore2027h1",
+     "monitoring_url": "https://mon.sycamore.ct.letsencrypt.org/2027h1/",
+     "state": {
+      "usable": {
+       "timestamp": "2025-11-27T03:00:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2026-12-17T00:00:00Z",
+      "end_exclusive": "2027-06-18T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Sycamore2027h2",
+     "monitoring_url": "https://mon.sycamore.ct.letsencrypt.org/2027h2/",
+     "state": {
+      "usable": {
+       "timestamp": "2025-11-27T03:00:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-06-18T00:00:00Z",
+      "end_exclusive": "2027-12-16T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Willow2026h2",
+     "monitoring_url": "https://mon.willow.ct.letsencrypt.org/2026h2/",
+     "state": {
+      "usable": {
+       "timestamp": "2025-11-27T03:00:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2026-06-17T00:00:00Z",
+      "end_exclusive": "2026-12-16T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Willow2027h1",
+     "monitoring_url": "https://mon.willow.ct.letsencrypt.org/2027h1/",
+     "state": {
+      "usable": {
+       "timestamp": "2025-11-27T03:00:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2026-12-16T00:00:00Z",
+      "end_exclusive": "2027-06-17T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Willow2027h2",
+     "monitoring_url": "https://mon.willow.ct.letsencrypt.org/2027h2/",
+     "state": {
+      "usable": {
+       "timestamp": "2025-11-27T03:00:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-06-17T00:00:00Z",
+      "end_exclusive": "2027-12-15T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Sycamore2028h1",
+     "monitoring_url": "https://mon.sycamore.ct.letsencrypt.org/2028h1/",
+     "state": {
+      "qualified": {
+       "timestamp": "2026-10-14T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-12-16T00:00:00Z",
+      "end_exclusive": "2028-06-14T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Sycamore2028h2",
+     "monitoring_url": "https://mon.sycamore.ct.letsencrypt.org/2028h2/",
+     "state": {
+      "qualified": {
+       "timestamp": "2026-10-14T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2028-06-14T00:00:00Z",
+      "end_exclusive": "2028-12-20T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Willow2028h1",
+     "monitoring_url": "https://mon.willow.ct.letsencrypt.org/2028h1/",
+     "state": {
+      "qualified": {
+       "timestamp": "2026-10-14T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2027-12-15T00:00:00Z",
+      "end_exclusive": "2028-06-15T00:00:00Z"
+     }
+    },
+    {
+     "description": "Let's Encrypt Willow2028h2",
+     "monitoring_url": "https://mon.willow.ct.letsencrypt.org/2028h2/",
+     "state": {
+      "qualified": {
+       "timestamp": "2026-10-14T13:50:00Z"
+      }
+     },
+     "temporal_interval": {
+      "start_inclusive": "2028-06-15T00:00:00Z",
+      "end_exclusive": "2028-12-21T00:00:00Z"
+     }
+    }
+   ]
+  }
+ ]
+}

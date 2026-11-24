@@ -1,0 +1,13 @@
+{
+ "task": {"uuid": "0a0a0a0a-1111-4222-8333-444455556666", "time": "2026-11-20T10:00:00.000Z", "url": "https://dubai-customs-pay.top/", "domain": "dubai-customs-pay.top"},
+ "page": {"url": "https://dubai-customs-pay.top/", "domain": "dubai-customs-pay.top", "ip": "45.155.205.17", "asn": "AS64500", "asnname": "TINYHOST-AS"},
+ "data": {"requests": [
+  {"request": {"type": "Document", "request": {"url": "https://dubai-customs-pay.top/", "method": "GET"}}, "response": {"hash": "1111111111111111111111111111111111111111111111111111111111111111", "response": {"url": "https://dubai-customs-pay.top/", "mimeType": "text/html"}}},
+  {"request": {"type": "Script", "request": {"url": "https://dubai-customs-pay.top/assets/jquery.min.js", "method": "GET"}}, "response": {"hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "response": {"url": "https://dubai-customs-pay.top/assets/jquery.min.js", "mimeType": "application/javascript"}}},
+  {"request": {"type": "Script", "request": {"url": "https://dubai-customs-pay.top/assets/main.js?v=3", "method": "GET"}}, "response": {"hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "response": {"url": "https://dubai-customs-pay.top/assets/main.js?v=3", "mimeType": "application/javascript"}}},
+  {"request": {"type": "Stylesheet", "request": {"url": "https://dubai-customs-pay.top/assets/style.css", "method": "GET"}}, "response": {"hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "response": {"url": "https://dubai-customs-pay.top/assets/style.css", "mimeType": "text/css"}}},
+  {"request": {"type": "Script", "request": {"url": "https://www.googletagmanager.com/gtag/js?id=G-1", "method": "GET"}}, "response": {"hash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "response": {"url": "https://www.googletagmanager.com/gtag/js?id=G-1", "mimeType": "application/javascript"}}},
+  {"request": {"type": "Image", "request": {"url": "https://dubai-customs-pay.top/favicon.ico", "method": "GET"}}, "response": {"hash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "response": {"url": "https://dubai-customs-pay.top/favicon.ico", "mimeType": "image/x-icon"}}}
+ ]},
+ "lists": {"ips": ["45.155.205.17"], "domains": ["dubai-customs-pay.top", "www.googletagmanager.com"]}
+}

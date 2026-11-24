@@ -1,0 +1,172 @@
+# Agent-made labels (agent-2026-11-23-r2) from stored run8 evidence only (snapshot title/text/form fields, screenshots, RDAP, feeds). NOT human-verified. screenshot_path is relative to the run8 data dir data/runs/run8. Rows whose reason says "NOT a safe hard negative" are unrelated to the UAE brand but not legitimate. Round 2 (2026-11-23): every row re-checked against its screenshot, or DB snapshot facts when no screenshot; blank/blocked pages are class d; for-sale pages are c parked; confidence column added.
+domain,class,subclass,brand_matched,reason,screenshot_path,labeller,confidence
+18re-ae.icu,c,betting,,Chinese sports-betting/casino portal; no UAE brand. NOT a safe hard negative,evidence/18re-ae.icu/20261122T100917Z/screenshot.png,agent-2026-11-23-r2,high
+1b987697-7d92-42b6-b6d8-5535c37c474d.smsa.de,c,parked,smsa,"""Temporarily unavailable"" text; DB final URL is Sedo smsa.de sale page",evidence/1b987697-7d92-42b6-b6d8-5535c37c474d.smsa.de/20261122T120206Z/screenshot.png,agent-2026-11-23-r2,medium
+aaly-aljazeera-alarabia.com,d,blocked,airarabia,"Blank page with ""403 Forbidden"" only",evidence/aaly-aljazeera-alarabia.com/20261122T101247Z/screenshot.png,agent-2026-11-23-r2,high
+adib.ml,c,parked,adib,Access Denied page naming forsale.godaddy.com/forsale/adib.ml,evidence/adib.ml/20261122T010030Z/screenshot.png,agent-2026-11-23-r2,medium
+admin.smsa.de,c,parked,smsa,"""Temporarily unavailable"" text; DB final URL is Sedo smsa.de sale page",evidence/admin.smsa.de/20261122T150430Z/screenshot.png,agent-2026-11-23-r2,medium
+ae-2026pg.site,c,betting,,"Brazilian casino ""2026pg"" registration form. NOT a safe hard negative",evidence/ae-2026pg.site/20261122T180252Z/screenshot.png,agent-2026-11-23-r2,high
+ahmad-adib.ir,d,empty,adib,Persian hosting-provider default welcome page; no site content,evidence/ahmad-adib.ir/20261122T090005Z/screenshot.png,agent-2026-11-23-r2,high
+airarabiaroblox.com,d,no_snapshot,airarabia,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+alarabia-app.pages.dev,c,unrelated_business,airarabia,"""AL-Arabiea Cosmetics & Medical Tools"" pharmacy-code login; not Air Arabia",evidence/alarabia-app.pages.dev/20261121T201112Z/screenshot.png,agent-2026-11-23-r2,high
+alhoot-china.almashreq-golden.com,d,empty,mashreq,"Hostinger ""coming soon"" placeholder; no site content",evidence/alhoot-china.almashreq-golden.com/20261122T150000Z/screenshot.png,agent-2026-11-23-r2,high
+alifarabia.com,c,betting,airarabia,"Indonesian SPOTBET gambling site, no Air Arabia branding. NOT a safe hard negative",evidence/alifarabia.com/20261122T060138Z/screenshot.png,agent-2026-11-23-r2,high
+almashreqdistributionqatar.easyinstance.com,c,unrelated_business,mashreq,"Plain Odoo email/password login, no Mashreq branding",evidence/almashreqdistributionqatar.easyinstance.com/20261122T180346Z/screenshot.png,agent-2026-11-23-r2,medium
+almashreqres.dms24x7.com,c,unrelated_business,mashreq,Al Mashreq Boutique Hotel Riyadh booking site,evidence/almashreqres.dms24x7.com/20261122T120131Z/screenshot.png,agent-2026-11-23-r2,high
+amerdubai.com,c,brand_owned_or_vendor,amer,"Al Rawda typing centre, ""Authorized service center for Amer services""",evidence/amerdubai.com/20261122T160223Z/screenshot.png,agent-2026-11-23-r2,medium
+anymoney.jp,c,unrelated_business,eandmoney,Japanese DeepBank accounting login; not e& money,evidence/anymoney.jp/20261122T061251Z/screenshot.png,agent-2026-11-23-r2,high
+app.altharamexico.com,c,unrelated_business,aramex,ALTHARA-branded Spanish login; no Aramex branding,evidence/app.altharamexico.com/20261121T194353Z/screenshot.png,agent-2026-11-23-r2,high
+app.namedubai.ac.ae,c,unrelated_business,amer,"Generic ""Sign In"" form, no brand logo; academic .ac.ae host",evidence/app.namedubai.ac.ae/20261122T110929Z/screenshot.png,agent-2026-11-23-r2,medium
+aqarabia.com,c,unrelated_business,airarabia,Al Qadarif / AQ Contracting scrap-recycle company site,evidence/aqarabia.com/20261122T080409Z/screenshot.png,agent-2026-11-23-r2,high
+arab3x.net,d,no_snapshot,aramex,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+aramex-express.com,d,error,aramex,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+aramex-help.com,b,copy_of_brand_page,aramex,"Aramex tracking-page copy, tracking number pre-filled, Log in button",evidence/aramex-help.com/20261121T193432Z/screenshot.png,agent-2026-11-23-r2,high
+aramex-moving.online,c,unrelated_business,aramex,Egyptian furniture mover with own truck logo and phone number,evidence/aramex-moving.online/20261122T090247Z/screenshot.png,agent-2026-11-23-r2,high
+aramex-no-reply-invoice-payments-failedfr346572645.justns.ru,d,empty,aramex,"DirectAdmin ""something amazing will be constructed"" placeholder; no content",evidence/aramex-no-reply-invoice-payments-failedfr346572645.justns.ru/20261122T140159Z/screenshot.png,agent-2026-11-23-r2,high
+ascarabia.com,d,no_snapshot,airarabia,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+assets.adnoc.xyz,c,parked,adnocdist,"Sedo ""this domain adnoc.xyz is for sale"" page",evidence/assets.adnoc.xyz/20261122T111151Z/screenshot.png,agent-2026-11-23-r2,high
+beta-etisalat.ipixsolutions.net,c,brand_owned_or_vendor,etisalat,"e& ""HSE Competency Assurance"" staff email login on vendor host",evidence/beta-etisalat.ipixsolutions.net/20261122T140155Z/screenshot.png,agent-2026-11-23-r2,medium
+bupa-ocbc-bankfab.com.ph,d,empty,fab,Completely blank white page,evidence/bupa-ocbc-bankfab.com.ph/20261122T041508Z/screenshot.png,agent-2026-11-23-r2,high
+car3m.com,c,unrelated_business,careem,"Chinese adult-app download page, no Careem branding. NOT a safe hard negative",evidence/car3m.com/20261122T180005Z/screenshot.png,agent-2026-11-23-r2,high
+careem-app.pages.dev,d,error,careem,"Only text ""ERROR: MCP error -32601 Method not found""",evidence/careem-app.pages.dev/20261122T130043Z/screenshot.png,agent-2026-11-23-r2,high
+careemglobal.com,b,lookalike_no_form,careem,"""CAREEM"" logo on Swahili UAE-jobs/Dubai-trips site, WhatsApp +971",evidence/careemglobal.com/20261122T101002Z/screenshot.png,agent-2026-11-23-r2,medium
+careemhala.zendesk.com,c,brand_owned_or_vendor,careem,"Zendesk ""Sign in to Careem Hala"" help-centre login",evidence/careemhala.zendesk.com/20261122T040151Z/screenshot.png,agent-2026-11-23-r2,medium
+clone-test.kareem-digital.com,d,error,careem,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+cmp.abdelrahman-talaat.com,c,unrelated_business,talabat,"Arabic marketing-ops email/password login, no Talabat branding",evidence/cmp.abdelrahman-talaat.com/20261122T110455Z/screenshot.png,agent-2026-11-23-r2,high
+com-gift-cards-icp.com,d,empty,icp,"Hosting ""Why am I seeing this page"" default. NOT a safe hard negative",evidence/com-gift-cards-icp.com/20261122T101050Z/screenshot.png,agent-2026-11-23-r2,high
+cons-mofa-org-pk.art,d,blocked,mofa,"""Checking your browser"" bot-check interstitial only",evidence/cons-mofa-org-pk.art/20261122T050003Z/screenshot.png,agent-2026-11-23-r2,high
+cpanel.adib.49295.ir,c,unrelated_business,adib,Stock cPanel login of a hosting customer; no ADIB branding,evidence/cpanel.adib.49295.ir/20261122T130137Z/screenshot.png,agent-2026-11-23-r2,high
+d4rb.com,c,unrelated_business,darb,"Arabic Quran-tafsir academy ""Darb al-Ulum""; no Darb toll branding",evidence/d4rb.com/20261122T030016Z/screenshot.png,agent-2026-11-23-r2,high
+dar-almashreq.org,d,error,mashreq,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+darb-academy.com,c,unrelated_business,darb,"Arabic e-learning platform ""Darb Academy"" with own logo",evidence/darb-academy.com/20261122T080649Z/screenshot.png,agent-2026-11-23-r2,high
+darb-albinaa.ly,d,error,darb,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+darb-casppay.com,d,error,darb,No screenshot; DB: domain does not resolve (NXDOMAIN),,agent-2026-11-23-r2,high
+darb-smartfollowup.com,c,unrelated_business,darb,"Staff login of ""Darb Al-Tumour"" date factory, own palm logo",evidence/darb-smartfollowup.com/20261122T101249Z/screenshot.png,agent-2026-11-23-r2,high
+demo.kareem-digital.com,c,dev_test,careem,"""Test store"" WordPress blog for Kareem Digital Menus; no Careem branding",evidence/demo.kareem-digital.com/20261122T160003Z/screenshot.png,agent-2026-11-23-r2,high
+du-ae.store,d,empty,du,Completely blank white page,evidence/du-ae.store/20261122T190016Z/screenshot.png,agent-2026-11-23-r2,high
+dubaicourtsae.com,d,error,dubaicourts,No screenshot; DB: domain does not resolve (NXDOMAIN),,agent-2026-11-23-r2,high
+dubaipalace.cfd,c,betting,dubaipolice,"Online casino ""Dubai Palace"" with slots bonus. NOT a safe hard negative",evidence/dubaipalace.cfd/20261122T180014Z/screenshot.png,agent-2026-11-23-r2,high
+eand.ngagecpaas.com,c,brand_owned_or_vendor,etisalat,Comviva-branded CPaaS sign-in; e& tenant on vendor platform,evidence/eand.ngagecpaas.com/20261122T110124Z/screenshot.png,agent-2026-11-23-r2,medium
+earnmoney-csl.pages.dev,c,dev_test,eandmoney,"""AdRewards"" demo app, ""prototype points, not real money""; no e& branding",evidence/earnmoney-csl.pages.dev/20261122T070049Z/screenshot.png,agent-2026-11-23-r2,high
+earnmoney.shop,c,parked,eandmoney,"Access Denied on parking-ad redirect (dot-reviews.org, domain=this host)",evidence/earnmoney.shop/20261122T064816Z/screenshot.png,agent-2026-11-23-r2,medium
+eastmoney-global.com,c,unrelated_business,eandmoney,"Chinese ""East Money"" trading-terminal download page. NOT a safe hard negative",evidence/eastmoney-global.com/20261122T101251Z/screenshot.png,agent-2026-11-23-r2,high
+emirates-skywards.com.es,d,error,emiratesair,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+emirates24.net,c,unrelated_business,enbd,Emirates 24 Arabic news site; no bank branding,evidence/emirates24.net/20261121T201550Z/screenshot.png,agent-2026-11-23-r2,high
+emirateshow.org,c,unrelated_business,emiratespost,"""Emirates How"" UAE how-to blog with carrier-billing ad; no Emirates Post branding; NOT a safe hard negative",evidence/emirateshow.org/20261122T110711Z/screenshot.png,agent-2026-11-23-r2,medium
+emiratesinone.com,c,parked,emiratesair,"STRATO ""this domain is now reserved, no content"" page",evidence/emiratesinone.com/20261122T101124Z/screenshot.png,agent-2026-11-23-r2,high
+emirateslabs.com,c,parked,enbd,Access Denied page naming forsale.godaddy.com/forsale/emirateslabs.com,evidence/emirateslabs.com/20261122T101200Z/screenshot.png,agent-2026-11-23-r2,medium
+emiratesrblx.org,d,error,enbd,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+enbd.nestogroup.com,d,empty,enbd,Plesk default webpage; no site content,evidence/enbd.nestogroup.com/20261122T110053Z/screenshot.png,agent-2026-11-23-r2,high
+etisalat-makkah.personaldienst24.de,c,parked,etisalat,"Sedo ""personaldienst24.de is for sale"" page",evidence/etisalat-makkah.personaldienst24.de/20261122T110846Z/screenshot.png,agent-2026-11-23-r2,high
+etisalategypt.com,c,parked,etisalat,"Parking page with ""related searches"" links only",evidence/etisalategypt.com/20261122T030948Z/screenshot.png,agent-2026-11-23-r2,high
+etisalatinternet.shop,d,no_snapshot,etisalat,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+etisalatphone.xyz,d,error,etisalat,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+eyesturnedskywards.com,c,unrelated_business,emiratesair,"""Eyes Turned Skywards"" personal travel blog",evidence/eyesturnedskywards.com/20261122T110400Z/screenshot.png,agent-2026-11-23-r2,high
+fdp-tamm.de,c,unrelated_business,tamm,German FDP party branch Asperg-Tamm news page,evidence/fdp-tamm.de/20261122T050110Z/screenshot.png,agent-2026-11-23-r2,high
+flydubai.shop,b,lookalike_no_form,flydubai,"""FlyDubai Store"" claims ""official Flydubai online store""; AI-tools ads",evidence/flydubai.shop/20261122T111127Z/screenshot.png,agent-2026-11-23-r2,high
+flydubaivisas.com,c,parked,flydubai,HugeDomains bot-check page; DB final URL is HugeDomains sale profile,evidence/flydubaivisas.com/20261122T003300Z/screenshot.png,agent-2026-11-23-r2,low
+flydubau.ru,d,empty,flydubai,Black page with a single gear icon (maintenance),evidence/flydubau.ru/20261122T052203Z/screenshot.png,agent-2026-11-23-r2,high
+gdrfa.taashira.ae,d,empty,gdrfad,"Only backend status JSON ""gdrfa-backend""; no user-facing page",evidence/gdrfa.taashira.ae/20261122T130059Z/screenshot.png,agent-2026-11-23-r2,medium
+hezb-darb.com,d,error,darb,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+hotdog.kareem-digital.com,c,unrelated_business,careem,"Kareem Digital store ""temporarily suspended"" notice",evidence/hotdog.kareem-digital.com/20261122T080024Z/screenshot.png,agent-2026-11-23-r2,high
+info.etisalat-gps.com,c,unrelated_business,etisalat,AWCIT-branded user/password tracking login; no e& branding,evidence/info.etisalat-gps.com/20261122T110025Z/screenshot.png,agent-2026-11-23-r2,high
+iris-eand.com,c,brand_owned_or_vendor,etisalat,"e& logo, ""built specifically for e& MarCom department"" campaign tool",evidence/iris-eand.com/20261122T180005Z/screenshot.png,agent-2026-11-23-r2,medium
+islamabadpolice.news,d,error,adpolice,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+kareem-digital.com,c,unrelated_business,careem,"""Kareem Digital"" restaurant-menu store with own crown logo",evidence/kareem-digital.com/20261122T160010Z/screenshot.png,agent-2026-11-23-r2,high
+kareem-digital.ps,c,unrelated_business,careem,Same Kareem Digital restaurant-menu store (redirects to .com),evidence/kareem-digital.ps/20261122T160039Z/screenshot.png,agent-2026-11-23-r2,high
+kareem-sites.pages.dev,d,blocked,careem,"""This site is password-protected"" prompt only",evidence/kareem-sites.pages.dev/20261122T110506Z/screenshot.png,agent-2026-11-23-r2,high
+library-admin.smsa.org.au,d,no_snapshot,smsa,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+library.smsa.org.au,d,no_snapshot,smsa,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+livank.com,d,error,liv,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+livtank.com,c,parked,liv,HugeDomains bot-check page; DB final URL is HugeDomains sale profile,evidence/livtank.com/20261122T020008Z/screenshot.png,agent-2026-11-23-r2,medium
+login.grandmoney.de,c,parked,eandmoney,"""Temporarily unavailable"" text; DB final URL is Sedo sale lander",evidence/login.grandmoney.de/20261122T130009Z/screenshot.png,agent-2026-11-23-r2,medium
+luminaramexico.com,d,empty,aramex,"Hostinger ""website is waiting to be published"" placeholder",evidence/luminaramexico.com/20261121T210739Z/screenshot.png,agent-2026-11-23-r2,high
+mashreq.help,d,blocked,mashreq,"Manus ""This site has been blocked"" page",evidence/mashreq.help/20261122T024528Z/screenshot.png,agent-2026-11-23-r2,high
+mashreq.net,c,parked,mashreq,"Spaceship ""Domain for sale Mashreq.net, $650"" page",evidence/mashreq.net/20261122T101236Z/screenshot.png,agent-2026-11-23-r2,high
+mashreq.scikiq.org,c,brand_owned_or_vendor,mashreq,"Vendor demo CEO briefing ""Good morning, Ahmed"", Mashreq figures",evidence/mashreq.scikiq.org/20261122T101018Z/screenshot.png,agent-2026-11-23-r2,medium
+mashreqsen.com,c,parked,mashreq,"Parking page with ""related searches"" links only",evidence/mashreqsen.com/20261122T140055Z/screenshot.png,agent-2026-11-23-r2,high
+mindmoney.info,c,unrelated_business,eandmoney,Russian complaint page about broker Mind Money,evidence/mindmoney.info/20261122T080258Z/screenshot.png,agent-2026-11-23-r2,high
+mofa-cross.de,c,parked,mofa,"Domain-sale page ""Diese Domain kaufen"" for mofa-cross.de",evidence/mofa-cross.de/20261121T210303Z/screenshot.png,agent-2026-11-23-r2,high
+mofa.gov.tw.admin-mcas-df.ms,c,unrelated_business,mofa,Genuine Microsoft sign-in (login.microsoftonline.com) for Defender proxy; Taiwan MOFA,evidence/mofa.gov.tw.admin-mcas-df.ms/20261122T180431Z/screenshot.png,agent-2026-11-23-r2,high
+mofa.gov.tw.mcas-df.ms,c,unrelated_business,mofa,Genuine Microsoft sign-in (login.microsoftonline.com) for Defender proxy; Taiwan MOFA,evidence/mofa.gov.tw.mcas-df.ms/20261122T180429Z/screenshot.png,agent-2026-11-23-r2,high
+mofa.mygovernment.ai,c,unrelated_business,mofa,"""Thoughts"" app email/password login; no UAE MOFA branding",evidence/mofa.mygovernment.ai/20261122T180033Z/screenshot.png,agent-2026-11-23-r2,medium
+new.smsa.dev,c,parked,smsa,"Parking page ""smsa.dev"" with related-search ad links",evidence/new.smsa.dev/20261122T060639Z/screenshot.png,agent-2026-11-23-r2,high
+nogoum-darb.pages.dev,d,error,darb,Cloudflare 522 connection timed out,evidence/nogoum-darb.pages.dev/20261122T110049Z/screenshot.png,agent-2026-11-23-r2,high
+oms.talabatridergear.com,c,brand_owned_or_vendor,talabat,"""boolanga BI"" + talabat badge sign-in for rider-gear vendor",evidence/oms.talabatridergear.com/20261122T120724Z/screenshot.png,agent-2026-11-23-r2,medium
+pay.aipolice.us,d,error,adpolice,"GoDaddy ""Pay Link Not Found"" only",evidence/pay.aipolice.us/20261122T064749Z/screenshot.png,agent-2026-11-23-r2,high
+pay.kklii8.top,c,unrelated_business,,"Chinese ""Yile system"" login, no UAE brand. NOT a safe hard negative",evidence/pay.kklii8.top/20261122T160411Z/screenshot.png,agent-2026-11-23-r2,medium
+pay.tp-fab-energyutilities.com,d,error,fab,"GoDaddy ""Pay Link Not Found"" only",evidence/pay.tp-fab-energyutilities.com/20261122T021216Z/screenshot.png,agent-2026-11-23-r2,high
+payit.online,c,parked,payit,"""Temporarily unavailable"" text; DB final URL is Sedo sale lander",evidence/payit.online/20261122T140002Z/screenshot.png,agent-2026-11-23-r2,medium
+pizza3.kareem-digital.com,d,empty,careem,"cPanel ""SORRY"" default page; no site content",evidence/pizza3.kareem-digital.com/20261122T140007Z/screenshot.png,agent-2026-11-23-r2,high
+plate.roadpolice.am,c,unrelated_business,adpolice,Armenian police number-plate lookup with Armenian police crest,evidence/plate.roadpolice.am/20261122T010712Z/screenshot.png,agent-2026-11-23-r2,high
+preprod-eandmoney-apim.developer.azure-api.net,c,brand_owned_or_vendor,eandmoney,"Azure API developer portal ""Welcome to e& money"", Explore APIs",evidence/preprod-eandmoney-apim.developer.azure-api.net/20261122T110156Z/screenshot.png,agent-2026-11-23-r2,medium
+procareemr.com,c,unrelated_business,careem,"French clinic EMR software ""ProCare""; no Careem branding",evidence/procareemr.com/20261122T120012Z/screenshot.png,agent-2026-11-23-r2,high
+rakbank.online,d,no_snapshot,rakbank,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+rapidcareemergencyplumberottawa.site,d,error,careem,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+rdservices.sendmoney.org,c,unrelated_business,eandmoney,Captcha only; DB: ShemarooMe phone+PIN billing funnel. NOT a safe hard negative,evidence/rdservices.sendmoney.org/20261122T110819Z/screenshot.png,agent-2026-11-23-r2,medium
+salik.click,d,no_snapshot,salik,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+salik.enterprises,d,empty,salik,"Default WordPress ""Hello world"" post; no Salik branding",evidence/salik.enterprises/20261122T101257Z/screenshot.png,agent-2026-11-23-r2,high
+sendmoney.co.ke,d,error,eandmoney,"LiteSpeed ""404 Not Found""",evidence/sendmoney.co.ke/20261121T194247Z/screenshot.png,agent-2026-11-23-r2,high
+sendmoney.here,c,parked,eandmoney,Access Denied page naming forsale.godaddy.com/forsale/sendmoney.here,evidence/sendmoney.here/20261122T070200Z/screenshot.png,agent-2026-11-23-r2,medium
+shop.smsa.de,c,parked,smsa,"""Temporarily unavailable"" text; DB final URL is Sedo smsa.de sale page",evidence/shop.smsa.de/20261122T130048Z/screenshot.png,agent-2026-11-23-r2,medium
+sitemaps.smsa.de,c,parked,smsa,"Sedo ""smsa.de is for sale"" page",evidence/sitemaps.smsa.de/20261122T110015Z/screenshot.png,agent-2026-11-23-r2,high
+skywardscripts.com,c,unrelated_business,emiratesair,"""Skyward Imprint"" publishing services, ""Publish With Purpose""",evidence/skywardscripts.com/20261122T100441Z/screenshot.png,agent-2026-11-23-r2,high
+spotbet.alifarabia.com,c,betting,airarabia,Indonesian SPOTBET gambling login/daftar page. NOT a safe hard negative,evidence/spotbet.alifarabia.com/20261122T060024Z/screenshot.png,agent-2026-11-23-r2,high
+staging.rider.talabatridergear.com,c,brand_owned_or_vendor,talabat,"Boolanga ""Rider Login"" staging app of Talabat rider-gear vendor",evidence/staging.rider.talabatridergear.com/20261122T110612Z/screenshot.png,agent-2026-11-23-r2,medium
+t-patroller-staging.app.talabat.wearyourebrand.com,c,brand_owned_or_vendor,talabat,Boolanga Business sign-in on vendor staging host for Talabat,evidence/t-patroller-staging.app.talabat.wearyourebrand.com/20261122T102350Z/screenshot.png,agent-2026-11-23-r2,medium
+takabat.blog,c,betting,talabat,"Bangla sports-betting site ""TAKABAT"", bKash. NOT a safe hard negative",evidence/takabat.blog/20261121T210411Z/screenshot.png,agent-2026-11-23-r2,high
+talabat-5at.pages.dev,c,unrelated_business,talabat,"Maroon ""طلبيات"" orders login, user ABDULLAH; no Talabat logo",evidence/talabat-5at.pages.dev/20261121T200747Z/screenshot.png,agent-2026-11-23-r2,medium
+talabat-promo.live,d,error,talabat,Cloudflare 521 web server down,evidence/talabat-promo.live/20261122T061141Z/screenshot.png,agent-2026-11-23-r2,high
+talabat.alkoot-restaurant.com,c,unrelated_business,talabat,Al Kout Restaurant ordering app with own logo,evidence/talabat.alkoot-restaurant.com/20261122T101052Z/screenshot.png,agent-2026-11-23-r2,high
+talabat.eat,c,parked,talabat,"GoDaddy ""talabat.eat is parked free"" page",evidence/talabat.eat/20261122T101243Z/screenshot.png,agent-2026-11-23-r2,high
+talabat.ghali.group,c,unrelated_business,talabat,"Plain blue ""TALABAT"" orders-management login; not Talabat's orange logo",evidence/talabat.ghali.group/20261122T150027Z/screenshot.png,agent-2026-11-23-r2,medium
+talabat.xyz,c,parked,talabat,Access Denied page naming forsale.godaddy.com/forsale/talabat.xyz,evidence/talabat.xyz/20261122T101243Z/screenshot.png,agent-2026-11-23-r2,low
+talabataccount.com,d,no_snapshot,talabat,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+talabatak.org,c,unrelated_business,talabat,"Egyptian delivery app ""Talabatk TK"" with own logo; imitates Talabat style; NOT a safe hard negative",evidence/talabatak.org/20261122T101309Z/screenshot.png,agent-2026-11-23-r2,medium
+talabatbet.com,c,betting,talabat,"Bangla gaming site ""talabat"" with bKash. NOT a safe hard negative",evidence/talabatbet.com/20261122T011519Z/screenshot.png,agent-2026-11-23-r2,high
+talabath.com,c,betting,talabat,"Thai lottery site ""TALABATH"", LINE popup. NOT a safe hard negative",evidence/talabath.com/20261122T002821Z/screenshot.png,agent-2026-11-23-r2,high
+tamayoz-kareem-cms.pages.dev,c,unrelated_business,careem,"Generic Arabic CMS login ""Welcome Kareem""; no Careem logo or colours; NOT a safe hard negative",evidence/tamayoz-kareem-cms.pages.dev/20261122T140102Z/screenshot.png,agent-2026-11-23-r2,low
+tamm-ai.com,c,parked,tamm,Access Denied page naming forsale.godaddy.com/forsale/tamm-ai.com,evidence/tamm-ai.com/20261122T150007Z/screenshot.png,agent-2026-11-23-r2,medium
+tamm-app.com,c,unrelated_business,tamm,"""Tamm - Your shop's money, done"" app onboarding, own logo",evidence/tamm-app.com/20261122T200223Z/screenshot.png,agent-2026-11-23-r2,medium
+tani-amer143.chatgpt.site,d,error,amer,"""404 Not found - No site here""",evidence/tani-amer143.chatgpt.site/20261122T140014Z/screenshot.png,agent-2026-11-23-r2,high
+test-menu.kareem-digital.com,c,dev_test,careem,Kareem Digital restaurant-menu test store with own crown logo,evidence/test-menu.kareem-digital.com/20261122T160020Z/screenshot.png,agent-2026-11-23-r2,high
+test.darb.care,c,dev_test,darb,"""Darbcare"" clinic sign-in, own D logo; no Darb toll branding",evidence/test.darb.care/20261122T130015Z/screenshot.png,agent-2026-11-23-r2,high
+trytalabaty.com,d,error,talabat,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+virginmobile.shop,c,parked,virginmobileae,Access Denied page naming forsale.godaddy.com/forsale/virginmobile.shop,evidence/virginmobile.shop/20261122T101303Z/screenshot.png,agent-2026-11-23-r2,medium
+waterdubai.com,d,error,amer,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+webmail.adib.49295.ir,c,unrelated_business,adib,Stock cPanel Webmail login of a hosting customer; no ADIB branding,evidence/webmail.adib.49295.ir/20261122T130154Z/screenshot.png,agent-2026-11-23-r2,high
+wellthcareemployer.com,c,unrelated_business,careem,WellthCare employee-benefits marketing page; no Careem branding,evidence/wellthcareemployer.com/20261122T160432Z/screenshot.png,agent-2026-11-23-r2,high
+workspace.ioarabia.com,d,no_snapshot,airarabia,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+www.abudhabicoding.xyz,c,parked,adpolice,Access Denied page naming forsale.godaddy.com/forsale/ for this host,evidence/www.abudhabicoding.xyz/20261122T010245Z/screenshot.png,agent-2026-11-23-r2,medium
+www.abudhabipublic.xyz,c,parked,adpolice,Access Denied page naming forsale.godaddy.com/forsale/ for this host,evidence/www.abudhabipublic.xyz/20261122T010351Z/screenshot.png,agent-2026-11-23-r2,medium
+www.abudhabiwrite.xyz,c,parked,adpolice,Access Denied page naming forsale.godaddy.com/forsale/ for this host,evidence/www.abudhabiwrite.xyz/20261122T010459Z/screenshot.png,agent-2026-11-23-r2,medium
+www.alhoot-china.almashreq-golden.com,d,empty,mashreq,"Hostinger ""coming soon"" placeholder; no site content",evidence/www.alhoot-china.almashreq-golden.com/20261122T150000Z/screenshot.png,agent-2026-11-23-r2,high
+www.alifarabia.com,c,betting,airarabia,"Indonesian SPOTBET gambling site, no Air Arabia branding. NOT a safe hard negative",evidence/www.alifarabia.com/20261122T060247Z/screenshot.png,agent-2026-11-23-r2,high
+www.amerdubai.com,c,brand_owned_or_vendor,amer,"Al Rawda typing centre, ""Authorized service center for Amer services""",evidence/www.amerdubai.com/20261122T160234Z/screenshot.png,agent-2026-11-23-r2,medium
+www.anymoney.jp,c,unrelated_business,eandmoney,Japanese DeepBank accounting login; not e& money,evidence/www.anymoney.jp/20261122T120615Z/screenshot.png,agent-2026-11-23-r2,high
+www.aqarabia.com,c,unrelated_business,airarabia,Al Qadarif / AQ Contracting materials-supply company site,evidence/www.aqarabia.com/20261122T080532Z/screenshot.png,agent-2026-11-23-r2,high
+www.aramex-refund-enel.ph,d,empty,aramex,Completely blank white page,evidence/www.aramex-refund-enel.ph/20261122T001806Z/screenshot.png,agent-2026-11-23-r2,high
+www.aramexgo.com,c,brand_owned_or_vendor,aramex,"""aramex go"" shipping site with Quick Rate Calculator, Aramex styling",evidence/www.aramexgo.com/20261122T110551Z/screenshot.png,agent-2026-11-23-r2,medium
+www.arnetuae.com,d,empty,amer,"""Website under maintenance, we'll be back soon"" page",evidence/www.arnetuae.com/20261122T090602Z/screenshot.png,agent-2026-11-23-r2,high
+www.auraarabia.com,c,parked,airarabia,Access Denied page naming forsale.godaddy.com/forsale/ for this host,evidence/www.auraarabia.com/20261122T160025Z/screenshot.png,agent-2026-11-23-r2,low
+www.cons-mofa-org-pk.art,d,blocked,mofa,"""Checking your browser"" bot-check interstitial only",evidence/www.cons-mofa-org-pk.art/20261122T050223Z/screenshot.png,agent-2026-11-23-r2,high
+www.dar-almashreq.org,d,error,mashreq,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+www.darb-albinaa.ly,d,error,darb,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+www.dubaicourtsae.com,d,no_snapshot,dubaicourts,"No screenshot; DB has no page snapshot, only registration facts",,agent-2026-11-23-r2,high
+www.earnmoney.shop,c,parked,eandmoney,"Access Denied on parking-ad redirect (dot-reviews.org, domain=this host)",evidence/www.earnmoney.shop/20261122T091332Z/screenshot.png,agent-2026-11-23-r2,medium
+www.emirates-skywards.com.es,d,error,emiratesair,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+www.etisalat-v9betmobile.com.ph,d,empty,etisalat,Completely blank white page,evidence/www.etisalat-v9betmobile.com.ph/20261122T011154Z/screenshot.png,agent-2026-11-23-r2,high
+www.etisalategypt.com,c,parked,etisalat,"Parking page with ""related searches"" links only",evidence/www.etisalategypt.com/20261122T031052Z/screenshot.png,agent-2026-11-23-r2,high
+www.etisalatinternet.shop,d,error,etisalat,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+www.hezb-darb.com,d,error,darb,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+www.hotdog.kareem-digital.com,c,unrelated_business,careem,"Arabic ""coming soon"" store page, ""Made by Kareem Digital"" badge",evidence/www.hotdog.kareem-digital.com/20261122T080138Z/screenshot.png,agent-2026-11-23-r2,medium
+www.luminaramexico.com,d,empty,aramex,"Hostinger ""website is waiting to be published"" placeholder",evidence/www.luminaramexico.com/20261122T001159Z/screenshot.png,agent-2026-11-23-r2,high
+www.nationalsleepcareemail.com,c,parked,careem,"Access Denied on parking-ad redirect (dot-health.org, domain=this host)",evidence/www.nationalsleepcareemail.com/20261122T200000Z/screenshot.png,agent-2026-11-23-r2,medium
+www.pizza3.kareem-digital.com,d,empty,careem,"cPanel ""SORRY"" default page; no site content",evidence/www.pizza3.kareem-digital.com/20261122T140009Z/screenshot.png,agent-2026-11-23-r2,high
+www.procareemr.com,c,unrelated_business,careem,"French clinic EMR software ""ProCare""; no Careem branding",evidence/www.procareemr.com/20261122T100324Z/screenshot.png,agent-2026-11-23-r2,high
+www.skywardscripts.com,c,unrelated_business,emiratesair,"""Skyward Imprint"" publishing services, ""Publish With Purpose""",evidence/www.skywardscripts.com/20261122T100424Z/screenshot.png,agent-2026-11-23-r2,high
+www.skywardspirit.com,d,blocked,emiratesair,"Cloudflare ""Sorry, you have been blocked"" (weebly.com)",evidence/www.skywardspirit.com/20261122T130022Z/screenshot.png,agent-2026-11-23-r2,high
+www.talabat.alkoot-restaurant.com,c,unrelated_business,talabat,Al Kout Restaurant ordering app with own logo,evidence/www.talabat.alkoot-restaurant.com/20261122T101053Z/screenshot.png,agent-2026-11-23-r2,high
+www.waterdubai.com,d,error,amer,No screenshot; DB: page did not load in 15 s,,agent-2026-11-23-r2,high
+www.wellthcareemployer.com,c,unrelated_business,careem,WellthCare employee-benefits marketing page; no Careem branding,evidence/www.wellthcareemployer.com/20261122T160434Z/screenshot.png,agent-2026-11-23-r2,high
+yachtrentals.sandbox.careemapis.com,c,brand_owned_or_vendor,careem,"""Yacht Rentals - Open this page from the Careem app""",evidence/yachtrentals.sandbox.careemapis.com/20261122T140121Z/screenshot.png,agent-2026-11-23-r2,medium

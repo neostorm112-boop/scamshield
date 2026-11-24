@@ -1,0 +1,801 @@
+{
+"_note": "Built from docs/evidence/gang-mainjs-2026-11-21.md: real urlscan search hash:\"1a27e992...\" of 2026-11-21 (61 scans, 46 domains); first-scan uuids/IPs are real, 15 repeat scans are synthetic.",
+"total": 61,
+"took": 31,
+"has_more": false,
+"results": [
+{
+"task": {
+"uuid": "019dcaa8-c0f0-75bc-ae61-d414469dd0d3",
+"time": "2026-04-26T12:00:00.000Z",
+"url": "https://dubaipolice.ae.finez.top/",
+"domain": "dubaipolice.ae.finez.top"
+},
+"page": {
+"url": "https://dubaipolice.ae.finez.top/",
+"domain": "dubaipolice.ae.finez.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019dc2fe-95a9-767c-9ca7-e362b6f67249",
+"time": "2026-04-25T12:00:00.000Z",
+"url": "https://salik.ae.trdr.top/",
+"domain": "salik.ae.trdr.top"
+},
+"page": {
+"url": "https://salik.ae.trdr.top/",
+"domain": "salik.ae.trdr.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019dbbd6-aea4-776f-a8f1-e8ea410c38cc",
+"time": "2026-04-23T12:00:00.000Z",
+"url": "https://salik.ae.ticylv.top/",
+"domain": "salik.ae.ticylv.top"
+},
+"page": {
+"url": "https://salik.ae.ticylv.top/",
+"domain": "salik.ae.ticylv.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019da025-5a44-7521-84d1-1b6ae553f90c",
+"time": "2026-04-18T12:00:00.000Z",
+"url": "https://darb.qmobilits.top/",
+"domain": "darb.qmobilits.top"
+},
+"page": {
+"url": "https://darb.qmobilits.top/",
+"domain": "darb.qmobilits.top",
+"ip": "188.114.97.3"
+}
+},
+{
+"task": {
+"uuid": "019d9538-a596-74d1-b3be-fecbe92176cc",
+"time": "2026-04-16T12:00:00.000Z",
+"url": "https://salik.ae.ticylb.top/",
+"domain": "salik.ae.ticylb.top"
+},
+"page": {
+"url": "https://salik.ae.ticylb.top/",
+"domain": "salik.ae.ticylb.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d9618-f5f0-7713-b3fc-4896cf453283",
+"time": "2026-04-16T12:00:00.000Z",
+"url": "https://salik.ae.ticylx.top/",
+"domain": "salik.ae.ticylx.top"
+},
+"page": {
+"url": "https://salik.ae.ticylx.top/",
+"domain": "salik.ae.ticylx.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d95cc-a811-732e-b843-ebe7640000ee",
+"time": "2026-04-16T12:00:00.000Z",
+"url": "https://salik.ae.tiicya.top/",
+"domain": "salik.ae.tiicya.top"
+},
+"page": {
+"url": "https://salik.ae.tiicya.top/",
+"domain": "salik.ae.tiicya.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d89f4-614d-743a-a05a-6cfd6b4bb07c",
+"time": "2026-04-14T12:00:00.000Z",
+"url": "https://dubai.customsnid.top/",
+"domain": "dubai.customsnid.top"
+},
+"page": {
+"url": "https://dubai.customsnid.top/",
+"domain": "dubai.customsnid.top",
+"ip": "104.21.4.147"
+}
+},
+{
+"task": {
+"uuid": "019d8c12-d104-73cc-aad7-e92ed352879c",
+"time": "2026-04-14T12:00:00.000Z",
+"url": "https://salik.ae.ticka.top/",
+"domain": "salik.ae.ticka.top"
+},
+"page": {
+"url": "https://salik.ae.ticka.top/",
+"domain": "salik.ae.ticka.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d8c4d-a1ee-70c3-a982-fd470d0d0a88",
+"time": "2026-04-14T12:00:00.000Z",
+"url": "https://salik.ae.ticks.top/",
+"domain": "salik.ae.ticks.top"
+},
+"page": {
+"url": "https://salik.ae.ticks.top/",
+"domain": "salik.ae.ticks.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d8c53-d286-73ff-9909-3028ad686e85",
+"time": "2026-04-14T12:00:00.000Z",
+"url": "https://salik.ae.tickv.top/",
+"domain": "salik.ae.tickv.top"
+},
+"page": {
+"url": "https://salik.ae.tickv.top/",
+"domain": "salik.ae.tickv.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d8683-d05d-7474-84a7-0ef51f768dad",
+"time": "2026-04-13T12:00:00.000Z",
+"url": "https://salik.ae.ticy.top/",
+"domain": "salik.ae.ticy.top"
+},
+"page": {
+"url": "https://salik.ae.ticy.top/",
+"domain": "salik.ae.ticy.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d80f8-8940-7516-b441-698486369919",
+"time": "2026-04-12T12:00:00.000Z",
+"url": "https://dubai.custiomis.top/",
+"domain": "dubai.custiomis.top"
+},
+"page": {
+"url": "https://dubai.custiomis.top/",
+"domain": "dubai.custiomis.top",
+"ip": "104.21.15.125"
+}
+},
+{
+"task": {
+"uuid": "019d8184-b21e-754b-9996-17f4b1c6e662",
+"time": "2026-04-12T12:00:00.000Z",
+"url": "https://dubai.custiomse.top/",
+"domain": "dubai.custiomse.top"
+},
+"page": {
+"url": "https://dubai.custiomse.top/",
+"domain": "dubai.custiomse.top",
+"ip": "188.114.96.3"
+}
+},
+{
+"task": {
+"uuid": "019d8102-40d7-75c6-9fa5-fcbe80007ae3",
+"time": "2026-04-12T12:00:00.000Z",
+"url": "https://dubai.custiomsy.top/",
+"domain": "dubai.custiomsy.top"
+},
+"page": {
+"url": "https://dubai.custiomsy.top/",
+"domain": "dubai.custiomsy.top",
+"ip": "104.21.85.180"
+}
+},
+{
+"task": {
+"uuid": "019d7bc2-65a5-752a-8047-3a176a1876ec",
+"time": "2026-04-11T12:00:00.000Z",
+"url": "https://dubaicustomsxa.top/",
+"domain": "dubaicustomsxa.top"
+},
+"page": {
+"url": "https://dubaicustomsxa.top/",
+"domain": "dubaicustomsxa.top",
+"ip": "104.21.64.202"
+}
+},
+{
+"task": {
+"uuid": "019d6ff6-f271-755c-9a1b-0fc56f79e587",
+"time": "2026-04-09T12:00:00.000Z",
+"url": "https://trcz.top/",
+"domain": "trcz.top"
+},
+"page": {
+"url": "https://trcz.top/",
+"domain": "trcz.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d6bed-cab4-74af-accd-551fe5105505",
+"time": "2026-04-08T12:00:00.000Z",
+"url": "https://salik.ae.tollr.top/",
+"domain": "salik.ae.tollr.top"
+},
+"page": {
+"url": "https://salik.ae.tollr.top/",
+"domain": "salik.ae.tollr.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d6ce0-2c7e-704e-8331-686645d22f26",
+"time": "2026-04-08T12:00:00.000Z",
+"url": "https://trcx.top/",
+"domain": "trcx.top"
+},
+"page": {
+"url": "https://trcx.top/",
+"domain": "trcx.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5284-af8a-746c-bb0c-c6a09ccba363",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://postnord.dk.trackx.top/",
+"domain": "postnord.dk.trackx.top"
+},
+"page": {
+"url": "https://postnord.dk.trackx.top/",
+"domain": "postnord.dk.trackx.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5256-1c51-707a-9443-b66ba693b52d",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billia.top/",
+"domain": "salik.ae.billia.top"
+},
+"page": {
+"url": "https://salik.ae.billia.top/",
+"domain": "salik.ae.billia.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5258-d11f-77a0-a0f2-5594d5a04a8a",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billib.top/",
+"domain": "salik.ae.billib.top"
+},
+"page": {
+"url": "https://salik.ae.billib.top/",
+"domain": "salik.ae.billib.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5257-a61e-7258-a435-2d22ed9eb606",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billic.top/",
+"domain": "salik.ae.billic.top"
+},
+"page": {
+"url": "https://salik.ae.billic.top/",
+"domain": "salik.ae.billic.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5257-b754-708e-9c38-bf49352cedf4",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billid.top/",
+"domain": "salik.ae.billid.top"
+},
+"page": {
+"url": "https://salik.ae.billid.top/",
+"domain": "salik.ae.billid.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5257-e3f9-733b-ae5d-f6e3cd16326d",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billim.top/",
+"domain": "salik.ae.billim.top"
+},
+"page": {
+"url": "https://salik.ae.billim.top/",
+"domain": "salik.ae.billim.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5256-55a3-711c-b1c5-12e5ec328d5c",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billin.top/",
+"domain": "salik.ae.billin.top"
+},
+"page": {
+"url": "https://salik.ae.billin.top/",
+"domain": "salik.ae.billin.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5257-21e8-707a-8dd1-4c60e158fec5",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billis.top/",
+"domain": "salik.ae.billis.top"
+},
+"page": {
+"url": "https://salik.ae.billis.top/",
+"domain": "salik.ae.billis.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5256-bdf8-7581-818a-fb67c5360d89",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billiv.top/",
+"domain": "salik.ae.billiv.top"
+},
+"page": {
+"url": "https://salik.ae.billiv.top/",
+"domain": "salik.ae.billiv.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5255-fb4f-71ff-807b-8cfeee4a7b45",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billix.top/",
+"domain": "salik.ae.billix.top"
+},
+"page": {
+"url": "https://salik.ae.billix.top/",
+"domain": "salik.ae.billix.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d5257-043a-73f7-ae30-2c49418f5768",
+"time": "2026-04-03T12:00:00.000Z",
+"url": "https://salik.ae.billiz.top/",
+"domain": "salik.ae.billiz.top"
+},
+"page": {
+"url": "https://salik.ae.billiz.top/",
+"domain": "salik.ae.billiz.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000012",
+"time": "2026-04-02T18:00:00.000Z",
+"url": "https://salik.ae.billb.top/",
+"domain": "salik.ae.billb.top"
+},
+"page": {
+"url": "https://salik.ae.billb.top/",
+"domain": "salik.ae.billb.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000013",
+"time": "2026-04-02T18:00:00.000Z",
+"url": "https://salik.ae.billm.top/",
+"domain": "salik.ae.billm.top"
+},
+"page": {
+"url": "https://salik.ae.billm.top/",
+"domain": "salik.ae.billm.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000014",
+"time": "2026-04-02T18:00:00.000Z",
+"url": "https://salik.ae.billv.top/",
+"domain": "salik.ae.billv.top"
+},
+"page": {
+"url": "https://salik.ae.billv.top/",
+"domain": "salik.ae.billv.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d4cee-9435-7611-a0ca-91e44a80c7f0",
+"time": "2026-04-02T12:00:00.000Z",
+"url": "https://salik.ae.billb.top/",
+"domain": "salik.ae.billb.top"
+},
+"page": {
+"url": "https://salik.ae.billb.top/",
+"domain": "salik.ae.billb.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d4cee-a4fa-71a2-88b7-fa8bce4220b0",
+"time": "2026-04-02T12:00:00.000Z",
+"url": "https://salik.ae.billm.top/",
+"domain": "salik.ae.billm.top"
+},
+"page": {
+"url": "https://salik.ae.billm.top/",
+"domain": "salik.ae.billm.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d4cee-db69-7358-a0e1-90fcd529cbf3",
+"time": "2026-04-02T12:00:00.000Z",
+"url": "https://salik.ae.billv.top/",
+"domain": "salik.ae.billv.top"
+},
+"page": {
+"url": "https://salik.ae.billv.top/",
+"domain": "salik.ae.billv.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "019d4cee-0deb-722b-b7fe-e1b2ffd68e77",
+"time": "2026-04-02T12:00:00.000Z",
+"url": "https://salik.ae.billx.top/",
+"domain": "salik.ae.billx.top"
+},
+"page": {
+"url": "https://salik.ae.billx.top/",
+"domain": "salik.ae.billx.top",
+"ip": "47.251.1.16"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000011",
+"time": "2026-03-29T18:00:00.000Z",
+"url": "https://dubai.customszy.top/",
+"domain": "dubai.customszy.top"
+},
+"page": {
+"url": "https://dubai.customszy.top/",
+"domain": "dubai.customszy.top",
+"ip": "104.21.59.72"
+}
+},
+{
+"task": {
+"uuid": "019d3946-0d28-707a-9dc5-160a636cfb2c",
+"time": "2026-03-29T12:00:00.000Z",
+"url": "https://dubai.customszy.top/",
+"domain": "dubai.customszy.top"
+},
+"page": {
+"url": "https://dubai.customszy.top/",
+"domain": "dubai.customszy.top",
+"ip": "104.21.59.72"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000010",
+"time": "2026-03-26T18:00:00.000Z",
+"url": "https://nzta.govt-billi.top/",
+"domain": "nzta.govt-billi.top"
+},
+"page": {
+"url": "https://nzta.govt-billi.top/",
+"domain": "nzta.govt-billi.top",
+"ip": "172.67.131.164"
+}
+},
+{
+"task": {
+"uuid": "019d2900-c458-716f-9f7d-d41e8b51fb2e",
+"time": "2026-03-26T12:00:00.000Z",
+"url": "https://nzta.govt-billi.top/",
+"domain": "nzta.govt-billi.top"
+},
+"page": {
+"url": "https://nzta.govt-billi.top/",
+"domain": "nzta.govt-billi.top",
+"ip": "172.67.131.164"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000009",
+"time": "2026-03-19T18:00:00.000Z",
+"url": "https://parkin.aeasq.top/",
+"domain": "parkin.aeasq.top"
+},
+"page": {
+"url": "https://parkin.aeasq.top/",
+"domain": "parkin.aeasq.top",
+"ip": "104.21.7.2"
+}
+},
+{
+"task": {
+"uuid": "019d06d0-ad7b-704c-9505-47880273e722",
+"time": "2026-03-19T12:00:00.000Z",
+"url": "https://parkin.aeasq.top/",
+"domain": "parkin.aeasq.top"
+},
+"page": {
+"url": "https://parkin.aeasq.top/",
+"domain": "parkin.aeasq.top",
+"ip": "104.21.7.2"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000006",
+"time": "2026-03-15T18:00:00.000Z",
+"url": "https://suncorp-rewards.052758.com/",
+"domain": "suncorp-rewards.052758.com"
+},
+"page": {
+"url": "https://suncorp-rewards.052758.com/",
+"domain": "suncorp-rewards.052758.com",
+"ip": "104.21.37.200"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000007",
+"time": "2026-03-15T18:00:00.000Z",
+"url": "https://suncorp-rewards.157880.com/",
+"domain": "suncorp-rewards.157880.com"
+},
+"page": {
+"url": "https://suncorp-rewards.157880.com/",
+"domain": "suncorp-rewards.157880.com",
+"ip": "104.21.71.245"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000008",
+"time": "2026-03-15T18:00:00.000Z",
+"url": "https://westpacreward.sbs/",
+"domain": "westpacreward.sbs"
+},
+"page": {
+"url": "https://westpacreward.sbs/",
+"domain": "westpacreward.sbs",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "019cf3bc-e218-75c2-afcf-c178cef6a3b0",
+"time": "2026-03-15T12:00:00.000Z",
+"url": "https://suncorp-rewards.052758.com/",
+"domain": "suncorp-rewards.052758.com"
+},
+"page": {
+"url": "https://suncorp-rewards.052758.com/",
+"domain": "suncorp-rewards.052758.com",
+"ip": "104.21.37.200"
+}
+},
+{
+"task": {
+"uuid": "019cf3bc-efab-7660-a137-1360d9d64125",
+"time": "2026-03-15T12:00:00.000Z",
+"url": "https://suncorp-rewards.157880.com/",
+"domain": "suncorp-rewards.157880.com"
+},
+"page": {
+"url": "https://suncorp-rewards.157880.com/",
+"domain": "suncorp-rewards.157880.com",
+"ip": "104.21.71.245"
+}
+},
+{
+"task": {
+"uuid": "019cf3bc-f24e-76c9-b3e3-d081c75a5015",
+"time": "2026-03-15T12:00:00.000Z",
+"url": "https://westpacreward.sbs/",
+"domain": "westpacreward.sbs"
+},
+"page": {
+"url": "https://westpacreward.sbs/",
+"domain": "westpacreward.sbs",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000004",
+"time": "2026-03-14T18:00:00.000Z",
+"url": "https://dubai.customcys.top/",
+"domain": "dubai.customcys.top"
+},
+"page": {
+"url": "https://dubai.customcys.top/",
+"domain": "dubai.customcys.top",
+"ip": "172.67.156.150"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000005",
+"time": "2026-03-14T18:00:00.000Z",
+"url": "https://macquarie-points.3-co.com/",
+"domain": "macquarie-points.3-co.com"
+},
+"page": {
+"url": "https://macquarie-points.3-co.com/",
+"domain": "macquarie-points.3-co.com",
+"ip": "172.67.171.139"
+}
+},
+{
+"task": {
+"uuid": "019ceb98-e2c2-71ac-b7d8-ea5c0fa7126d",
+"time": "2026-03-14T12:00:00.000Z",
+"url": "https://dubai.customcys.top/",
+"domain": "dubai.customcys.top"
+},
+"page": {
+"url": "https://dubai.customcys.top/",
+"domain": "dubai.customcys.top",
+"ip": "172.67.156.150"
+}
+},
+{
+"task": {
+"uuid": "019cee96-033d-7018-8edb-e03443e38deb",
+"time": "2026-03-14T12:00:00.000Z",
+"url": "https://macquarie-points.3-co.com/",
+"domain": "macquarie-points.3-co.com"
+},
+"page": {
+"url": "https://macquarie-points.3-co.com/",
+"domain": "macquarie-points.3-co.com",
+"ip": "172.67.171.139"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000003",
+"time": "2026-03-13T18:00:00.000Z",
+"url": "https://eurobank.519b.cc/",
+"domain": "eurobank.519b.cc"
+},
+"page": {
+"url": "https://eurobank.519b.cc/",
+"domain": "eurobank.519b.cc",
+"ip": "188.114.96.3"
+}
+},
+{
+"task": {
+"uuid": "019ce741-87fb-7668-9d4b-6f7a62096931",
+"time": "2026-03-13T12:00:00.000Z",
+"url": "https://eurobank.519b.cc/",
+"domain": "eurobank.519b.cc"
+},
+"page": {
+"url": "https://eurobank.519b.cc/",
+"domain": "eurobank.519b.cc",
+"ip": "188.114.96.3"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000001",
+"time": "2026-03-11T18:00:00.000Z",
+"url": "https://colescredit-rewards.help/",
+"domain": "colescredit-rewards.help"
+},
+"page": {
+"url": "https://colescredit-rewards.help/",
+"domain": "colescredit-rewards.help",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000002",
+"time": "2026-03-11T18:00:00.000Z",
+"url": "https://colescredit-rewards.info/",
+"domain": "colescredit-rewards.info"
+},
+"page": {
+"url": "https://colescredit-rewards.info/",
+"domain": "colescredit-rewards.info",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "019cdb33-d2da-709a-8b51-0418cef54e02",
+"time": "2026-03-11T12:00:00.000Z",
+"url": "https://colescredit-rewards.help/",
+"domain": "colescredit-rewards.help"
+},
+"page": {
+"url": "https://colescredit-rewards.help/",
+"domain": "colescredit-rewards.help",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "019cdb39-9a92-738b-a2aa-2ba352052e0e",
+"time": "2026-03-11T12:00:00.000Z",
+"url": "https://colescredit-rewards.info/",
+"domain": "colescredit-rewards.info"
+},
+"page": {
+"url": "https://colescredit-rewards.info/",
+"domain": "colescredit-rewards.info",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "f0000000-0000-4000-8000-000000000000",
+"time": "2026-03-09T18:00:00.000Z",
+"url": "https://bankwest-ac.cc/",
+"domain": "bankwest-ac.cc"
+},
+"page": {
+"url": "https://bankwest-ac.cc/",
+"domain": "bankwest-ac.cc",
+"ip": "45.203.220.21"
+}
+},
+{
+"task": {
+"uuid": "019cd4d8-29aa-7549-b410-c035d0ade59e",
+"time": "2026-03-09T12:00:00.000Z",
+"url": "https://bankwest-ac.cc/",
+"domain": "bankwest-ac.cc"
+},
+"page": {
+"url": "https://bankwest-ac.cc/",
+"domain": "bankwest-ac.cc",
+"ip": "45.203.220.21"
+}
+}
+]
+}

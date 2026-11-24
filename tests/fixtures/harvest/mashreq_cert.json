@@ -1,0 +1,42 @@
+{
+ "subject": [
+  [
+   [
+    "countryName",
+    "AE"
+   ]
+  ],
+  [
+   [
+    "localityName",
+    "Dubai"
+   ]
+  ],
+  [
+   [
+    "organizationName",
+    "MASHREQBANK PSC"
+   ]
+  ],
+  [
+   [
+    "commonName",
+    "*.mashreq.com"
+   ]
+  ]
+ ],
+ "subjectAltName": [
+  [
+   "DNS",
+   "*.mashreq.com"
+  ],
+  [
+   "DNS",
+   "*.mashreqbank.com"
+  ],
+  [
+   "DNS",
+   "mashreq.com"
+  ]
+ ]
+}

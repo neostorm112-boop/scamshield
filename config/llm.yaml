@@ -1,0 +1,33 @@
+# AI explanation. The daily dollar cap is live.yaml thresholds.m10_llm_usd_day (one source of truth).
+model: claude-opus-5-5
+max_tokens: 1500
+effort: low
+timeout_s: 30
+max_retries: 2
+prompt_version: v1
+price_per_mtok: {input: 4, output: 20, cache_read: 0.4, cache_write: 5}   # Opus 5.5, USD per 1M tokens
+auto: {per_day: 130, per_domain_day: 1, states: [REVIEW_HIGH, REVIEW], skip_flags: [GRAY_LOW]}   # every analyst-queue case is explained automatically (no button); REVIEW_HIGH first, then highest risk
+max_fact_chars: 4000                                                      # one fact value, cut before it goes to the model
+concurrency: 2                                                            # explanation calls in flight at once
+
+# AI judge of the gray zone Labels and sorts GRAY / GRAY_LOW rows only; never hides,
+# never writes scores, bands, states or facts. Its spend counts against the same daily cap as the explanation (live.yaml).
+judge:
+  model: claude-opus-5-5             # eval on 19 labelled gray rows: Haiku 50% accuracy / 44% unclear, Opus 76% / 11%; ~$0.015 a case
+  max_tokens: 1024
+  effort: low
+  timeout_s: 20
+  max_retries: 1                     # transport retries inside the SDK (timeouts, 429, 5xx)
+  output_retries: 1                  # one more ask when the answer is not valid JSON or cites a foreign E-number
+  prompt_version: judge-v1
+  price_per_mtok: {input: 4.0, output: 20.0, cache_read: 0.4, cache_write: 5.0}
+  bands: [GRAY]                      # flags of the assessments the judge looks at; GRAY_LOW is not judged (little evidence, saves money; no card button)
+  per_day: 60                        # judge calls per UTC day (automatic); 60 x ~$0.015 stays under usd_day
+  usd_day: 1.0                       # judge's own share of the $5/day total cap
+  max_block_chars: 2000              # one untrusted block (fact value), cut before it goes to the model
+  max_total_chars: 12000             # all untrusted blocks together
+  max_feed_urls: 5                   # feed URLs of the domain shown to the judge (no E-number: cannot be cited)
+  auto: true                         # judge GRAY rows in the background after each check, within the caps above
+  concurrency: 2                     # judge calls in flight at once (a parking-IP burst waits in line, the thread pool stays free)
+  rate_limit_retry_s: 60             # after a 429 / overloaded answer: wait, then one more try (the row is not a final answer)
+  sort_enabled: false                # the queue moves "probably not <brand>" rows down only after the judge passes `python -m scamshield.tools.eval_ai`
